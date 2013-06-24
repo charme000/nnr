@@ -1,7 +1,7 @@
 Release File:
 libnnr.a / nnr.lib
 
-Useing:
+Using:
 Edit The .pro File
 Add The Under Config Line
 {

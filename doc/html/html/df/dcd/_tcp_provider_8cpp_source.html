@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: TcpProvider.cpp源文件</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">TcpProvider.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../df/dcd/_tcp_provider_8cpp.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 ﻿#include <span class="stringliteral">&quot;TcpProvider.h&quot;</span>
+<a name="l00002"></a>00002 
+<a name="l00010"></a>00010 QT_BEGIN_NAMESPACE
+<a name="l00011"></a><a class="code" href="../../df/dcd/_tcp_provider_8cpp.html#a42c9ed7c6df8fd4e7dbeb601329cb762">00011</a> <span class="keyword">static</span> <span class="keywordtype">bool</span> <a class="code" href="../../df/dcd/_tcp_provider_8cpp.html#a42c9ed7c6df8fd4e7dbeb601329cb762">hasRecivedHeader</a> = <span class="keyword">false</span>;
+<a name="l00012"></a>00012 
+<a name="l00017"></a><a class="code" href="../../da/d08/class_tcp_provider.html#a64dd37ce6ae2adc05e397d40f0977674">00017</a> <span class="keywordtype">void</span> <a class="code" href="../../da/d08/class_tcp_provider.html#a64dd37ce6ae2adc05e397d40f0977674">TcpProvider::Send</a>(QByteArray&amp; b)
+<a name="l00018"></a>00018 {
+<a name="l00019"></a>00019     <span class="keywordflow">if</span>(m_socket-&gt;isValid())
+<a name="l00020"></a>00020     {
+<a name="l00021"></a>00021         <span class="comment">//qtcpsocet在写的时候先是填满自己内部的缓冲才一并发的 所以一次可能发不出去</span>
+<a name="l00022"></a>00022         <span class="keywordtype">int</span> nSize = m_socket-&gt;write(b);
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024         <span class="keywordflow">while</span>(nSize &lt; b.size())
+<a name="l00025"></a>00025         {
+<a name="l00026"></a>00026             nSize += m_socket-&gt;write(b.right(b.size() - nSize));
+<a name="l00027"></a>00027         }
+<a name="l00028"></a>00028     }
+<a name="l00029"></a>00029 }
+<a name="l00030"></a>00030 
+<a name="l00037"></a><a class="code" href="../../da/d08/class_tcp_provider.html#ab9ba25a3a137145fa8a5d4c4e7c2877a">00037</a> <span class="keywordtype">void</span> <a class="code" href="../../da/d08/class_tcp_provider.html#ab9ba25a3a137145fa8a5d4c4e7c2877a">TcpProvider::DataArrive</a>()
+<a name="l00038"></a>00038 {
+<a name="l00039"></a>00039     QDataStream OutDataStream(m_socket);
+<a name="l00040"></a>00040     OutDataStream.setVersion(QDataStream::Qt_4_7);
+<a name="l00041"></a>00041     <a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9">State_Tag</a> state = <a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9a35ffe22508aa955d0e66f52e5e0d760d">WaitFlag</a>;
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043     <span class="keywordflow">while</span>(<span class="keyword">true</span>)
+<a name="l00044"></a>00044     {
+<a name="l00045"></a>00045         <span class="keywordflow">switch</span>(state)
+<a name="l00046"></a>00046         {
+<a name="l00047"></a>00047             <span class="keywordflow">case</span> <a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9a35ffe22508aa955d0e66f52e5e0d760d">WaitFlag</a>:
+<a name="l00048"></a>00048             {
+<a name="l00049"></a>00049                 <span class="keywordflow">if</span>(<a class="code" href="../../df/dcd/_tcp_provider_8cpp.html#a42c9ed7c6df8fd4e7dbeb601329cb762">hasRecivedHeader</a> == <span class="keyword">false</span>)
+<a name="l00050"></a>00050                 {
+<a name="l00051"></a>00051                     qint64 len = m_socket-&gt;bytesAvailable();
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053                     <span class="keywordflow">if</span>(len &lt; <a class="code" href="../../d9/dd5/_protocol_defines_8h.html#a5aa89cc78e2dc149e7cb869781cdc11c">PG_HEADER_LEN</a>)
+<a name="l00054"></a>00054                     {
+<a name="l00055"></a>00055                         <span class="keywordflow">return</span>;
+<a name="l00056"></a>00056                     }
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058                     quint8 curFlag = 0;
+<a name="l00059"></a>00059                     quint8 curVersion = 0;
+<a name="l00060"></a>00060                     OutDataStream &gt;&gt; curFlag &gt;&gt; curVersion;
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062                     <span class="comment">//判断标识</span>
+<a name="l00063"></a>00063                     <span class="keywordflow">if</span>(curFlag != <a class="code" href="../../d9/dd5/_protocol_defines_8h.html#a2f91b88c00b55bbf419f060c50dfd4b9">PG_SIGN</a>)
+<a name="l00064"></a>00064                     {
+<a name="l00065"></a>00065                         <span class="keywordflow">return</span>;
+<a name="l00066"></a>00066                     }
+<a name="l00067"></a>00067 
+<a name="l00068"></a>00068                     <span class="keywordflow">if</span>(curVersion != <a class="code" href="../../d9/dd5/_protocol_defines_8h.html#a8028d514f1f91dd6f37c35c241e9a386">PG_VER_INVALID</a>)
+<a name="l00069"></a>00069                     {
+<a name="l00070"></a>00070                         <span class="comment">//根据版本生产出工厂去处理接收到的包</span>
+<a name="l00071"></a>00071                         <span class="comment">//首先按照版本创建协议工厂 因为它要处理和分析接收到的包</span>
+<a name="l00072"></a>00072                         <a class="code" href="../../d8/deb/class_i_provider.html#a59cbd41852a5d9ee867e6b2d90dfe2bb">createProtocol</a>(curVersion);
+<a name="l00073"></a>00073                         <a class="code" href="../../d8/deb/class_i_provider.html#a07ed4e6a6361a15896f67816ecedc56f">setupReciveManager</a>(<a class="code" href="../../d8/deb/class_i_provider.html#a9b369c97859b92a5af90f18def021f10">m_protocol</a>);
+<a name="l00074"></a>00074                         <a class="code" href="../../df/dcd/_tcp_provider_8cpp.html#a42c9ed7c6df8fd4e7dbeb601329cb762">hasRecivedHeader</a> = <span class="keyword">true</span>;
+<a name="l00075"></a>00075                         state = <a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9a32a974561f1246c560b8a12adc56436e">WaitData</a>;
+<a name="l00076"></a>00076                     }
+<a name="l00077"></a>00077                     <span class="keywordflow">else</span>
+<a name="l00078"></a>00078                     {
+<a name="l00079"></a>00079                         <span class="keywordflow">return</span>;
+<a name="l00080"></a>00080                     }
+<a name="l00081"></a>00081                 }
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083                 <span class="keywordflow">break</span>;
+<a name="l00084"></a>00084             }
+<a name="l00085"></a>00085             <span class="keywordflow">case</span> <a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9a32a974561f1246c560b8a12adc56436e">WaitData</a>:
+<a name="l00086"></a>00086             {
+<a name="l00087"></a>00087                 <span class="keywordtype">bool</span> ret = <a class="code" href="../../d8/deb/class_i_provider.html#a9b369c97859b92a5af90f18def021f10">m_protocol</a>-&gt;<a class="code" href="../../db/dfd/class_i_protocol.html#a144c9d8b4dfb11f73d363da315578295">DataRecived</a>(OutDataStream, m_socket-&gt;bytesAvailable(), <a class="code" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">m_bus</a>-&gt;<a class="code" href="../../d3/d1b/class_bus.html#a775c7237e26dd6d9db740644176f2cfe">getHostUuid</a>().toString());
+<a name="l00088"></a>00088 
+<a name="l00089"></a>00089                 <span class="keywordflow">if</span>(ret == <span class="keyword">true</span>)
+<a name="l00090"></a>00090                 {
+<a name="l00091"></a>00091                     <a class="code" href="../../df/dcd/_tcp_provider_8cpp.html#a42c9ed7c6df8fd4e7dbeb601329cb762">hasRecivedHeader</a> = <span class="keyword">false</span>;
+<a name="l00092"></a>00092                     state = <a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9a35ffe22508aa955d0e66f52e5e0d760d">WaitFlag</a>;
+<a name="l00093"></a>00093                 }
+<a name="l00094"></a>00094 
+<a name="l00095"></a>00095                 <span class="keywordflow">break</span>;
+<a name="l00096"></a>00096             }
+<a name="l00097"></a>00097             <span class="keywordflow">case</span> <a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9ae962ea8b0b3a376575ad0e616eeac474">Invalid</a>:
+<a name="l00098"></a>00098             {
+<a name="l00099"></a>00099                 <span class="keywordflow">break</span>;
+<a name="l00100"></a>00100             }
+<a name="l00101"></a>00101         }
+<a name="l00102"></a>00102     }
+<a name="l00103"></a>00103 }
+<a name="l00104"></a>00104 
+<a name="l00105"></a>00105 QT_END_NAMESPACE
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:40 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

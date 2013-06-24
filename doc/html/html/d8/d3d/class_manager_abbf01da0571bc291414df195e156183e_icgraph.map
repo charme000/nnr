@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$de/da5/class_pipe_manager.html#aebb6108812c816691a5db67549b34a2d" title="PipeManager::UserLeave" alt="" coords="233,5,399,32"/>
+<area shape="rect" id="node7" href="$d3/d2b/class_tcp_manager.html#a813e5f22b8c19b30f7e611f93aa20f00" title="TcpManager::UserLeave" alt="" coords="235,56,397,83"/>
+<area shape="rect" id="node5" href="$de/da5/class_pipe_manager.html#a58172081633b870854d5752c9f2c109b" title="PipeManager::AcceptNewUser" alt="" coords="449,5,647,32"/>
+<area shape="rect" id="node9" href="$d3/d2b/class_tcp_manager.html#a08347f21c9824a4ae7b489813df9fb65" title="TcpManager::AcceptNewUser" alt="" coords="451,56,645,83"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$d8/d3d/class_manager.html#abbf01da0571bc291414df195e156183e" title="Manager::DelUserFromBus" alt="" coords="229,31,408,57"/>
+<area shape="rect" id="node9" href="$d8/d3d/class_manager.html#a0c8600b382a62d4d64de9f511008a11e" title="Manager::clientDisconnected" alt="" coords="223,81,414,108"/>
+<area shape="rect" id="node11" href="$d8/d3d/class_manager.html#a0a01248007c42351f1683ec62d4e525f" title="Manager::serverDisconnected" alt="" coords="222,132,415,159"/>
+<area shape="rect" id="node5" href="$d3/d1b/class_bus.html#abca1d169269aef5452d883dbde4dfa2e" title="Bus::GetGuid" alt="" coords="464,5,565,32"/>
+<area shape="rect" id="node7" href="$d3/d1b/class_bus.html#a41741335e09142bc692c058e9e9272f8" title="Bus::Delete" alt="" coords="469,56,560,83"/>
+</map>

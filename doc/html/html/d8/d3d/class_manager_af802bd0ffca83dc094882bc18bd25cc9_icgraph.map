@@ -1,0 +1,6 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$de/da5/class_pipe_manager.html#a99a0cf4815f3df8d750eac8d96d47bfb" title="PipeManager::ConnectError" alt="" coords="209,5,391,32"/>
+<area shape="rect" id="node7" href="$d3/d2b/class_tcp_manager.html#a527c437a7efec26a8fbdac393b488f21" title="TcpManager::ConnectError" alt="" coords="211,56,389,83"/>
+<area shape="rect" id="node5" href="$de/da5/class_pipe_manager.html#a58172081633b870854d5752c9f2c109b" title="PipeManager::AcceptNewUser" alt="" coords="441,5,639,32"/>
+<area shape="rect" id="node9" href="$d3/d2b/class_tcp_manager.html#a08347f21c9824a4ae7b489813df9fb65" title="TcpManager::AcceptNewUser" alt="" coords="443,56,637,83"/>
+</map>

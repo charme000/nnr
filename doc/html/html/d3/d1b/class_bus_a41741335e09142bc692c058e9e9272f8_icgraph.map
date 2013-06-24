@@ -1,0 +1,8 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$d4/deb/class_base_private.html#a687c90de3c04259532bc53aebad27c9a" title="BasePrivate::Stop_p" alt="" coords="163,5,303,32"/>
+<area shape="rect" id="node5" href="$d8/d3d/class_manager.html#abbf01da0571bc291414df195e156183e" title="Manager::DelUserFromBus" alt="" coords="144,56,323,83"/>
+<area shape="rect" id="node7" href="$de/da5/class_pipe_manager.html#aebb6108812c816691a5db67549b34a2d" title="PipeManager::UserLeave" alt="" coords="371,31,538,57"/>
+<area shape="rect" id="node11" href="$d3/d2b/class_tcp_manager.html#a813e5f22b8c19b30f7e611f93aa20f00" title="TcpManager::UserLeave" alt="" coords="374,81,535,108"/>
+<area shape="rect" id="node9" href="$de/da5/class_pipe_manager.html#a58172081633b870854d5752c9f2c109b" title="PipeManager::AcceptNewUser" alt="" coords="587,31,786,57"/>
+<area shape="rect" id="node13" href="$d3/d2b/class_tcp_manager.html#a08347f21c9824a4ae7b489813df9fb65" title="TcpManager::AcceptNewUser" alt="" coords="589,81,784,108"/>
+</map>

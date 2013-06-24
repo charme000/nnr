@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node1" href="$d8/d3d/class_manager.html" title="实现通讯中管理监听和接受等操作的接口" alt="" coords="5,31,77,57"/>
+<area shape="rect" id="node3" href="$de/da5/class_pipe_manager.html" title="利用本地套接字(windows平台下为管道)实现通讯的管理器接口" alt="" coords="125,5,224,32"/>
+<area shape="rect" id="node5" href="$d3/d2b/class_tcp_manager.html" title="利用网络套接字实现通讯的管理器接口" alt="" coords="128,56,221,83"/>
+</map>

@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: Manager.h源文件</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Manager.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d7/d86/_manager_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 ﻿#ifndef MANAGER_H
+<a name="l00002"></a>00002 <span class="preprocessor">#define MANAGER_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="../../db/d1f/_common_8h.html">common/Common.h</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d5b/_bus_8h.html">Bus.h</a>&quot;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="../../d1/dd7/_user_unit_8h.html">UserUnit.h</a>&quot;</span>
+<a name="l00007"></a>00007 
+<a name="l00008"></a>00008 QT_BEGIN_NAMESPACE
+<a name="l00009"></a>00009 <span class="keyword">class </span><a class="code" href="../../d3/d1b/class_bus.html" title="实现数据通讯总线">Bus</a>;
+<a name="l00010"></a>00010 <span class="keyword">class </span><a class="code" href="../../da/dda/class_user_unit.html" title="参与连接以及通讯的实体定义类">UserUnit</a>;
+<a name="l00011"></a>00011 
+<a name="l00012"></a><a class="code" href="../../d8/d3d/class_manager.html">00012</a> <span class="keyword">class </span><a class="code" href="../../d8/d3d/class_manager.html" title="实现通讯中管理监听和接受等操作的接口">Manager</a> : <span class="keyword">public</span> QObject
+<a name="l00013"></a>00013 {
+<a name="l00014"></a>00014     Q_OBJECT
+<a name="l00015"></a>00015 <span class="keyword">public</span>:
+<a name="l00016"></a>00016     <span class="keyword">explicit</span> <a class="code" href="../../d8/d3d/class_manager.html#ab5294542fe9bfe5bd37382fb207373d6">Manager</a>(<a class="code" href="../../d3/d1b/class_bus.html" title="实现数据通讯总线">Bus</a>&amp; bus, QString&amp; attribute, QString&amp; value, QString&amp; guidName);
+<a name="l00017"></a>00017     <a class="code" href="../../d8/d3d/class_manager.html#a322cad25d7007438b3a043ad02253d29">~Manager</a>();
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="keyword">public</span>:
+<a name="l00020"></a>00020     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#a942a5bd0c477aceca63a1d56db44900b">Start</a>();
+<a name="l00021"></a>00021     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#a115875eef0ce9afe537f220ca96926fd">StartListen</a>() = 0;
+<a name="l00022"></a>00022     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#a3d7eb12c0415b4a1ef909e08a34a4987">StartConnect</a>() = 0;
+<a name="l00023"></a>00023 
+<a name="l00024"></a>00024     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> <a class="code" href="../../d8/d3d/class_manager.html#a70bf1a602b4ff820d62a8a9ddc6bd9f3">IsCOnnected</a>() = 0;
+<a name="l00025"></a>00025     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#aa6fda091b5ef57a0b713755dc4b44312">StopConnect</a>() = 0;
+<a name="l00026"></a>00026 
+<a name="l00027"></a>00027     QString <a class="code" href="../../d8/d3d/class_manager.html#ac589ea75861e0df4b79e469309a43303">GetCurStartArg</a>();
+<a name="l00028"></a>00028 
+<a name="l00029"></a>00029     QString <a class="code" href="../../d8/d3d/class_manager.html#adc00c09657d37da5dff4a404057aa52b">GetCurStartAttribute</a>();
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031     <a class="code" href="../../da/dda/class_user_unit.html" title="参与连接以及通讯的实体定义类">UserUnit</a>* <a class="code" href="../../d8/d3d/class_manager.html#a60c02cbbbc80b38f9bd1b1e8124d4533">GetCurUser</a>();
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033     <a class="code" href="../../d3/d1b/class_bus.html" title="实现数据通讯总线">Bus</a>* <a class="code" href="../../d8/d3d/class_manager.html#a0fa01fada8f9ed5e2d1a1686e66f6b99">GetCurBus</a>();
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035     <span class="keywordtype">bool</span> <a class="code" href="../../d8/d3d/class_manager.html#ae19a85f7c261a55279fd65019daf7dca">AddUserToBus</a>(<span class="keywordtype">void</span>* user, <a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392">Flag_Tag</a> ft, QString&amp; guidName);
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037     QString <a class="code" href="../../d8/d3d/class_manager.html#abbf01da0571bc291414df195e156183e">DelUserFromBus</a>(<span class="keywordtype">void</span>* user, <a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392">Flag_Tag</a> ft);
+<a name="l00038"></a>00038 <span class="keyword">public</span>:
+<a name="l00039"></a><a class="code" href="../../d8/d3d/class_manager.html#af6954a2d78f8f0eaa30df3cd3a179afd">00039</a>     QString <a class="code" href="../../d8/d3d/class_manager.html#af6954a2d78f8f0eaa30df3cd3a179afd">m_start</a>;
+<a name="l00040"></a><a class="code" href="../../d8/d3d/class_manager.html#af3cc0c135c9b09704de97590079df44d">00040</a>     QString <a class="code" href="../../d8/d3d/class_manager.html#af3cc0c135c9b09704de97590079df44d">m_attri</a>;
+<a name="l00041"></a><a class="code" href="../../d8/d3d/class_manager.html#a9c0bf671d4d05458d3d1d45b0e1da1f4">00041</a>     QString <a class="code" href="../../d8/d3d/class_manager.html#a9c0bf671d4d05458d3d1d45b0e1da1f4">m_ori</a>;
+<a name="l00042"></a><a class="code" href="../../d8/d3d/class_manager.html#ab733d1c1ee74e994340a9a255393d971">00042</a>     <a class="code" href="../../d3/d1b/class_bus.html" title="实现数据通讯总线">Bus</a>* <a class="code" href="../../d8/d3d/class_manager.html#ab733d1c1ee74e994340a9a255393d971">m_bus</a>;
+<a name="l00043"></a><a class="code" href="../../d8/d3d/class_manager.html#ad684757f9385655deaf19142b333cf53">00043</a>     QString <a class="code" href="../../d8/d3d/class_manager.html#ad684757f9385655deaf19142b333cf53">m_name</a>;
+<a name="l00044"></a><a class="code" href="../../d8/d3d/class_manager.html#a5081c43ba550a444f83da4be306cbf22">00044</a>     <a class="code" href="../../da/dda/class_user_unit.html" title="参与连接以及通讯的实体定义类">UserUnit</a>* <a class="code" href="../../d8/d3d/class_manager.html#a5081c43ba550a444f83da4be306cbf22">m_user</a>;
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 <span class="keyword">public</span> Q_SLOTS:
+<a name="l00047"></a><a class="code" href="../../d8/d3d/class_manager.html#ae07ea2166a9a1648e562f4b5c5c40947">00047</a>     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#ae07ea2166a9a1648e562f4b5c5c40947">AcceptNewUser</a>() {}
+<a name="l00048"></a><a class="code" href="../../d8/d3d/class_manager.html#a4dcec0c36539862fff683ce6fe714e39">00048</a>     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#a4dcec0c36539862fff683ce6fe714e39">UserLeave</a>() {}
+<a name="l00049"></a><a class="code" href="../../d8/d3d/class_manager.html#a9d43d3b35625946ba1a4083f3a8b35dc">00049</a>     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#a9d43d3b35625946ba1a4083f3a8b35dc">ConnectError</a>(QAbstractSocket::SocketError err) {}
+<a name="l00050"></a><a class="code" href="../../d8/d3d/class_manager.html#a58610114fd747f98eb528e578b01dc50">00050</a>     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#a58610114fd747f98eb528e578b01dc50">ByteWriten</a>(qint64 len) {}
+<a name="l00051"></a>00051 
+<a name="l00052"></a>00052 Q_SIGNALS:
+<a name="l00053"></a>00053     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#addc2328d9550f4e31686f8416e870e35">addToBusFailed</a>(QString uuid);
+<a name="l00054"></a>00054     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#a434ed4720130a41539f52d1935852523">newClientConnectd</a>(QString name);
+<a name="l00055"></a>00055     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#abbba106bb652d4d762d25f2aec259613">connectToServer</a>(QString name);
+<a name="l00056"></a>00056     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#a0a01248007c42351f1683ec62d4e525f">serverDisconnected</a>(QString guid);
+<a name="l00057"></a>00057     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#a0c8600b382a62d4d64de9f511008a11e">clientDisconnected</a>(QString guid);
+<a name="l00058"></a>00058     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#af802bd0ffca83dc094882bc18bd25cc9">connectError</a>(QAbstractSocket::SocketError err);
+<a name="l00059"></a>00059     <span class="keywordtype">void</span> <a class="code" href="../../d8/d3d/class_manager.html#accc441991746f76ba4bc00dd993407fa">byteWriten</a>(qint64 len);
+<a name="l00060"></a>00060 };
+<a name="l00061"></a>00061 
+<a name="l00062"></a>00062 QT_END_NAMESPACE
+<a name="l00063"></a>00063 
+<a name="l00064"></a>00064 QT_END_HEADER
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066 <span class="preprocessor">#endif // MANAGER_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:40 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

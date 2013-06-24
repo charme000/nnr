@@ -1,0 +1,34 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$d5/df1/_base_8h.html" title="Base.h" alt="" coords="5,603,67,629"/>
+<area shape="rect" id="node12" href="$d7/d5b/_bus_8h.html" title="Bus.h" alt="" coords="597,229,653,256"/>
+<area shape="rect" id="node17" href="$d6/d82/_i_provider_8h.html" title="IProvider.h" alt="" coords="1032,304,1115,331"/>
+<area shape="rect" id="node19" href="$d5/d3f/_provider_factory_8h.html" title="ProviderFactory.h" alt="" coords="692,453,815,480"/>
+<area shape="rect" id="node23" href="$d9/d68/_manager_factory_8h.html" title="ManagerFactory.h" alt="" coords="194,603,320,629"/>
+<area shape="rect" id="node35" href="$d9/db3/_tcp_provider_8h.html" title="TcpProvider.h" alt="" coords="1098,379,1197,405"/>
+<area shape="rect" id="node40" href="$d5/d3d/_pipe_provider_8h.html" title="PipeProvider.h" alt="" coords="1382,379,1487,405"/>
+<area shape="rect" id="node50" href="$d7/d86/_manager_8h.html" title="Manager.h" alt="" coords="312,453,395,480"/>
+<area shape="rect" id="node70" href="$d1/dd7/_user_unit_8h.html" title="UserUnit.h" alt="" coords="751,155,833,181"/>
+<area shape="rect" id="node79" href="$df/d4b/_encoder_8h.html" title="Encoder.h" alt="" coords="855,80,936,107"/>
+<area shape="rect" id="node83" href="$d7/d2b/_i_protocol_8h.html" title="IProtocol.h" alt="" coords="1171,80,1255,107"/>
+<area shape="rect" id="node85" href="$d0/d0d/_protocol_factory_8h.html" title="ProtocolFactory.h" alt="" coords="1399,229,1524,256"/>
+<area shape="rect" id="node5" href="$db/d1b/_base_8cpp.html" title="Base.cpp" alt="" coords="67,752,144,779"/>
+<area shape="rect" id="node7" href="$d1/d8b/_base__p_8h.html" title="Base_p.h" alt="" coords="219,677,296,704"/>
+<area shape="rect" id="node10" href="$d2/d3b/_base_private_8cpp.html" title="BasePrivate.cpp" alt="" coords="199,752,315,779"/>
+<area shape="rect" id="node15" href="$df/d35/_bus_8cpp.html" title="Bus.cpp" alt="" coords="951,379,1021,405"/>
+<area shape="rect" id="node21" href="$d3/d5f/_tcp_manager_8h.html" title="TcpManager.h" alt="" coords="468,528,572,555"/>
+<area shape="rect" id="node28" href="$d6/d03/_pipe_manager_8h.html" title="PipeManager.h" alt="" coords="596,528,705,555"/>
+<area shape="rect" id="node45" href="$db/d2d/_user_unit__p_8h.html" title="UserUnit_p.h" alt="" coords="830,379,927,405"/>
+<area shape="rect" id="node47" href="$dd/d23/_user_unit_8cpp.html" title="UserUnit.cpp" alt="" coords="570,453,667,480"/>
+<area shape="rect" id="node64" href="$d5/ddd/_bus__p_8h.html" title="Bus_p.h" alt="" coords="1139,304,1209,331"/>
+<area shape="rect" id="node33" href="$dc/d9a/_user_unit_private_8cpp.html" title="UserUnitPrivate.cpp" alt="" coords="729,528,865,555"/>
+<area shape="rect" id="node26" href="$d7/d7c/_tcp_manager_8cpp.html" title="TcpManager.cpp" alt="" coords="469,603,587,629"/>
+<area shape="rect" id="node31" href="$d1/dc7/_pipe_manager_8cpp.html" title="PipeManager.cpp" alt="" coords="612,603,735,629"/>
+<area shape="rect" id="node38" href="$df/dcd/_tcp_provider_8cpp.html" title="TcpProvider.cpp" alt="" coords="1091,453,1205,480"/>
+<area shape="rect" id="node43" href="$de/d63/_pipe_provider_8cpp.html" title="PipeProvider.cpp" alt="" coords="1375,453,1493,480"/>
+<area shape="rect" id="node52" href="$d6/d69/_manager_8cpp.html" title="Manager.cpp" alt="" coords="295,528,392,555"/>
+<area shape="rect" id="node67" href="$de/d39/_bus_private_8cpp.html" title="BusPrivate.cpp" alt="" coords="1223,379,1332,405"/>
+<area shape="rect" id="node81" href="$d8/d08/_encoder_8cpp.html" title="Encoder.cpp" alt="" coords="858,155,952,181"/>
+<area shape="rect" id="node92" href="$da/d7e/_package_protocol__1__0_8h.html" title="PackageProtocol_1_0.h" alt="" coords="1207,155,1367,181"/>
+<area shape="rect" id="node89" href="$d4/de7/_protocol_factory_8cpp.html" title="ProtocolFactory.cpp" alt="" coords="1285,304,1424,331"/>
+<area shape="rect" id="node96" href="$dc/df7/_package_protocol__1__0_8cpp.html" title="PackageProtocol_1_0.cpp" alt="" coords="1199,229,1373,256"/>
+</map>

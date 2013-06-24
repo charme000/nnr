@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$d8/d3d/class_manager.html#ae19a85f7c261a55279fd65019daf7dca" title="Manager::AddUserToBus" alt="" coords="131,31,298,57"/>
+<area shape="rect" id="node5" href="$de/da5/class_pipe_manager.html#a58172081633b870854d5752c9f2c109b" title="PipeManager::AcceptNewUser" alt="" coords="347,5,546,32"/>
+<area shape="rect" id="node7" href="$d3/d2b/class_tcp_manager.html#a08347f21c9824a4ae7b489813df9fb65" title="TcpManager::AcceptNewUser" alt="" coords="349,56,544,83"/>
+</map>

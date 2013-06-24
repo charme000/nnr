@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>592</width>
+    <height>409</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>271</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>服务端</string>
+    </property>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>端口</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_port2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>80</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_listen">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>80</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>监听</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_name1">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>guid</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_ip2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>50</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>50</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ip</string>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_not_use_uuid_s">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>不使用</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>281</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>客户端</string>
+    </property>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>端口</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_port1">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>80</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_connect">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>80</y>
+       <width>61</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>连接</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_name2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>guid</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>54</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ip</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="edit_ip1">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>50</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="check_not_use_uuid_c">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>不使用</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTextEdit" name="edit_context">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>180</y>
+      <width>351</width>
+      <height>121</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_msg">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>370</y>
+      <width>331</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_send">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>370</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发送</string>
+    </property>
+   </widget>
+   <widget class="QListView" name="lv_user">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>180</y>
+      <width>211</width>
+      <height>81</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_dst">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>340</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>340</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>目标guid( 可以为空</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>370</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>发送消息</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>消息大厅</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>160</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>成员列表</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_type">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>340</y>
+      <width>61</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>340</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>类型</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_clear">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>310</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清空消息大厅</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_disconnect">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>270</y>
+      <width>61</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>断开</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_disconnect_all">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>310</y>
+      <width>61</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>断开所有</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edit_disconnect_uuid">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>270</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

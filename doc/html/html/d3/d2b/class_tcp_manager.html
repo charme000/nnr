@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: TcpManager类参考</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="../../inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">公有槽</a> &#124;
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-attribs">公有属性</a>  </div>
+  <div class="headertitle">
+<div class="title">TcpManager类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="TcpManager" --><!-- doxytag: inherits="Manager" -->
+<p>利用网络套接字实现通讯的管理器接口  
+ <a href="../../d3/d2b/class_tcp_manager.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d3/d5f/_tcp_manager_8h_source.html">TcpManager.h</a>&gt;</code></p>
+<div class="dynheader">
+类TcpManager继承关系图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/da9/class_tcp_manager__inherit__graph.png" border="0" usemap="#_tcp_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="_tcp_manager_inherit__map" id="_tcp_manager_inherit__map">
+<area shape="rect" id="node2" href="../../d8/d3d/class_manager.html" title="实现通讯中管理监听和接受等操作的接口" alt="" coords="16,5,88,32"/></map>
+<center><span class="legend">[<a href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+TcpManager合作图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/da5/class_tcp_manager__coll__graph.png" border="0" usemap="#_tcp_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_tcp_manager_coll__map" id="_tcp_manager_coll__map">
+<area shape="rect" id="node2" href="../../d8/d3d/class_manager.html" title="实现通讯中管理监听和接受等操作的接口" alt="" coords="47,96,119,123"/><area shape="rect" id="node4" href="../../da/dda/class_user_unit.html" title="参与连接以及通讯的实体定义类" alt="" coords="5,5,77,32"/><area shape="rect" id="node6" href="../../d3/d1b/class_bus.html" title="实现数据通讯总线" alt="" coords="101,5,147,32"/></map>
+<center><span class="legend">[<a href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../dc/d26/class_tcp_manager-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-slots"></a>
+公有槽</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2b/class_tcp_manager.html#a08347f21c9824a4ae7b489813df9fb65">AcceptNewUser</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2b/class_tcp_manager.html#a813e5f22b8c19b30f7e611f93aa20f00">UserLeave</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2b/class_tcp_manager.html#a527c437a7efec26a8fbdac393b488f21">ConnectError</a> (QAbstractSocket::SocketError err)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2b/class_tcp_manager.html#ac3b175bb40c1b337ec1ac848c35deb01">ByteWriten</a> (qint64 len)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2b/class_tcp_manager.html#aacfce0a695297949bbef0705a36f366c">TcpManager</a> (<a class="el" href="../../d3/d1b/class_bus.html">Bus</a> &amp;bus, QString &amp;attribute, QString &amp;value, QString &amp;guidName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2b/class_tcp_manager.html#a98f62ea88d28911b20e17a342d02d92e">~TcpManager</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2b/class_tcp_manager.html#affb5b63ed55b162da8b9d39a09919cb8">m_port</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QTcpSocket *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2b/class_tcp_manager.html#adc2edf58e1953ec75d36793352033867">m_socket</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QTcpServer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2b/class_tcp_manager.html#a39853ba2b5fe90542b16d094f6210dc1">m_server</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>利用网络套接字实现通讯的管理器接口 </p>
+<dl class="version"><dt><b>版本:</b></dt><dd>1.0 </dd></dl>
+<dl class="date"><dt><b>日期:</b></dt><dd>2012.12.1-2012.1.30 </dd></dl>
+<dl class="pre"><dt><b>前置条件:</b></dt><dd>一般该类的函数不需要显式的调用,Base类会管理并且自动调用 </dd></dl>
+
+<p>在文件<a class="el" href="../../d3/d5f/_tcp_manager_8h_source.html">TcpManager.h</a>第<a class="el" href="../../d3/d5f/_tcp_manager_8h_source.html#l00012">12</a>行定义。</p>
+</div><hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="aacfce0a695297949bbef0705a36f366c"></a><!-- doxytag: member="TcpManager::TcpManager" ref="aacfce0a695297949bbef0705a36f366c" args="(Bus &amp;bus, QString &amp;attribute, QString &amp;value, QString &amp;guidName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QT_BEGIN_NAMESPACE <a class="el" href="../../d3/d2b/class_tcp_manager.html#aacfce0a695297949bbef0705a36f366c">TcpManager::TcpManager</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d1b/class_bus.html">Bus</a> &amp;&#160;</td>
+          <td class="paramname"><em>bus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>guidName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>网络套接字管理器构造函数 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bus</td><td>通讯总线 </td></tr>
+    <tr><td class="paramname">attribute</td><td>管理器属性 </td></tr>
+    <tr><td class="paramname">value</td><td>连接标识 </td></tr>
+    <tr><td class="paramname">guidName</td><td>自身标识uuid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../d8/d3d/class_manager.html#ab5294542fe9bfe5bd37382fb207373d6">Manager(Bus&amp; bus, QString&amp; attribute, QString&amp; value, QString&amp; guidName)</a>: </dd></dl>
+
+<p>在文件<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html">TcpManager.cpp</a>第<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html#l00020">20</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a98f62ea88d28911b20e17a342d02d92e"></a><!-- doxytag: member="TcpManager::~TcpManager" ref="a98f62ea88d28911b20e17a342d02d92e" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d2b/class_tcp_manager.html#a98f62ea88d28911b20e17a342d02d92e">TcpManager::~TcpManager</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>网络套接字管理器析构函数 </p>
+
+<p>在文件<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html">TcpManager.cpp</a>第<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html#l00028">28</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a08347f21c9824a4ae7b489813df9fb65"></a><!-- doxytag: member="TcpManager::AcceptNewUser" ref="a08347f21c9824a4ae7b489813df9fb65" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d2b/class_tcp_manager.html#a08347f21c9824a4ae7b489813df9fb65">TcpManager::AcceptNewUser</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>保证连接建立后,创建通讯用户实体 该实体会管理通讯中断和连接错误已经发送字节回馈等功能</p>
+<p>连接建立后,为连接标识生成一个固定的通讯用户,并且将其假如到通讯总线中.</p>
+<dl class="warning"><dt><b>警告:</b></dt><dd>在加入总线之前需要互相发送自身标识,如果标识无效或者重复,都会导致失败. </dd></dl>
+
+<p>重载<a class="el" href="../../d8/d3d/class_manager.html#ae07ea2166a9a1648e562f4b5c5c40947">Manager</a>。</p>
+
+<p>在文件<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html">TcpManager.cpp</a>第<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html#l00115">115</a>行定义。</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d2b/class_tcp_manager_a08347f21c9824a4ae7b489813df9fb65_cgraph.png" border="0" usemap="#d3/d2b/class_tcp_manager_a08347f21c9824a4ae7b489813df9fb65_cgraph" alt=""/></div>
+<map name="d3/d2b/class_tcp_manager_a08347f21c9824a4ae7b489813df9fb65_cgraph" id="d3/d2b/class_tcp_manager_a08347f21c9824a4ae7b489813df9fb65_cgraph">
+<area shape="rect" id="node3" href="../../d3/d2b/class_tcp_manager.html#a527c437a7efec26a8fbdac393b488f21" title="TcpManager::ConnectError" alt="" coords="255,31,433,57"/><area shape="rect" id="node7" href="../../d3/d2b/class_tcp_manager.html#a813e5f22b8c19b30f7e611f93aa20f00" title="TcpManager::UserLeave" alt="" coords="263,107,425,133"/><area shape="rect" id="node19" href="../../d3/d2b/class_tcp_manager.html#ac3b175bb40c1b337ec1ac848c35deb01" title="TcpManager::ByteWriten" alt="" coords="261,157,427,184"/><area shape="rect" id="node23" href="../../d8/d3d/class_manager.html#a434ed4720130a41539f52d1935852523" title="Manager::newClientConnectd" alt="" coords="249,208,439,235"/><area shape="rect" id="node25" href="../../d8/d3d/class_manager.html#abbba106bb652d4d762d25f2aec259613" title="Manager::connectToServer" alt="" coords="256,259,432,285"/><area shape="rect" id="node27" href="../../d8/d3d/class_manager.html#ae19a85f7c261a55279fd65019daf7dca" title="Manager::AddUserToBus" alt="" coords="261,309,427,336"/><area shape="rect" id="node5" href="../../d8/d3d/class_manager.html#af802bd0ffca83dc094882bc18bd25cc9" title="Manager::connectError" alt="" coords="508,5,663,32"/><area shape="rect" id="node9" href="../../d8/d3d/class_manager.html#abbf01da0571bc291414df195e156183e" title="Manager::DelUserFromBus" alt="" coords="496,56,675,83"/><area shape="rect" id="node15" href="../../d8/d3d/class_manager.html#a0c8600b382a62d4d64de9f511008a11e" title="Manager::clientDisconnected" alt="" coords="490,107,681,133"/><area shape="rect" id="node17" href="../../d8/d3d/class_manager.html#a0a01248007c42351f1683ec62d4e525f" title="Manager::serverDisconnected" alt="" coords="489,157,682,184"/><area shape="rect" id="node11" href="../../d3/d1b/class_bus.html#abca1d169269aef5452d883dbde4dfa2e" title="Bus::GetGuid" alt="" coords="731,31,832,57"/><area shape="rect" id="node13" href="../../d3/d1b/class_bus.html#a41741335e09142bc692c058e9e9272f8" title="Bus::Delete" alt="" coords="736,81,827,108"/><area shape="rect" id="node21" href="../../d8/d3d/class_manager.html#accc441991746f76ba4bc00dd993407fa" title="Manager::byteWriten" alt="" coords="514,208,657,235"/><area shape="rect" id="node29" href="../../d3/d1b/class_bus.html#a16445102f6f61a21eaa7e35bcfe881f9" title="Bus::Add" alt="" coords="547,309,623,336"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3b175bb40c1b337ec1ac848c35deb01"></a><!-- doxytag: member="TcpManager::ByteWriten" ref="ac3b175bb40c1b337ec1ac848c35deb01" args="(qint64 len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d2b/class_tcp_manager.html#ac3b175bb40c1b337ec1ac848c35deb01">TcpManager::ByteWriten</a> </td>
+          <td>(</td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td><code> [slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写入字节报告函数</p>
+<p>通知上层当前已经传送的字节数</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">len</td><td>写入字节数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载<a class="el" href="../../d8/d3d/class_manager.html#a58610114fd747f98eb528e578b01dc50">Manager</a>。</p>
+
+<p>在文件<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html">TcpManager.cpp</a>第<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html#l00218">218</a>行定义。</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d2b/class_tcp_manager_ac3b175bb40c1b337ec1ac848c35deb01_cgraph.png" border="0" usemap="#d3/d2b/class_tcp_manager_ac3b175bb40c1b337ec1ac848c35deb01_cgraph" alt=""/></div>
+<map name="d3/d2b/class_tcp_manager_ac3b175bb40c1b337ec1ac848c35deb01_cgraph" id="d3/d2b/class_tcp_manager_ac3b175bb40c1b337ec1ac848c35deb01_cgraph">
+<area shape="rect" id="node3" href="../../d8/d3d/class_manager.html#accc441991746f76ba4bc00dd993407fa" title="Manager::byteWriten" alt="" coords="222,5,365,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d2b/class_tcp_manager_ac3b175bb40c1b337ec1ac848c35deb01_icgraph.png" border="0" usemap="#d3/d2b/class_tcp_manager_ac3b175bb40c1b337ec1ac848c35deb01_icgraph" alt=""/></div>
+<map name="d3/d2b/class_tcp_manager_ac3b175bb40c1b337ec1ac848c35deb01_icgraph" id="d3/d2b/class_tcp_manager_ac3b175bb40c1b337ec1ac848c35deb01_icgraph">
+<area shape="rect" id="node3" href="../../d3/d2b/class_tcp_manager.html#a08347f21c9824a4ae7b489813df9fb65" title="TcpManager::AcceptNewUser" alt="" coords="221,5,416,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a527c437a7efec26a8fbdac393b488f21"></a><!-- doxytag: member="TcpManager::ConnectError" ref="a527c437a7efec26a8fbdac393b488f21" args="(QAbstractSocket::SocketError err)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d2b/class_tcp_manager.html#a527c437a7efec26a8fbdac393b488f21">TcpManager::ConnectError</a> </td>
+          <td>(</td>
+          <td class="paramtype">QAbstractSocket::SocketError&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td><code> [slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>连接错误处理函数</p>
+<p>通知上层当前错误发生的代码</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载<a class="el" href="../../d8/d3d/class_manager.html#a9d43d3b35625946ba1a4083f3a8b35dc">Manager</a>。</p>
+
+<p>在文件<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html">TcpManager.cpp</a>第<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html#l00205">205</a>行定义。</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d2b/class_tcp_manager_a527c437a7efec26a8fbdac393b488f21_cgraph.png" border="0" usemap="#d3/d2b/class_tcp_manager_a527c437a7efec26a8fbdac393b488f21_cgraph" alt=""/></div>
+<map name="d3/d2b/class_tcp_manager_a527c437a7efec26a8fbdac393b488f21_cgraph" id="d3/d2b/class_tcp_manager_a527c437a7efec26a8fbdac393b488f21_cgraph">
+<area shape="rect" id="node3" href="../../d8/d3d/class_manager.html#af802bd0ffca83dc094882bc18bd25cc9" title="Manager::connectError" alt="" coords="232,5,387,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d2b/class_tcp_manager_a527c437a7efec26a8fbdac393b488f21_icgraph.png" border="0" usemap="#d3/d2b/class_tcp_manager_a527c437a7efec26a8fbdac393b488f21_icgraph" alt=""/></div>
+<map name="d3/d2b/class_tcp_manager_a527c437a7efec26a8fbdac393b488f21_icgraph" id="d3/d2b/class_tcp_manager_a527c437a7efec26a8fbdac393b488f21_icgraph">
+<area shape="rect" id="node3" href="../../d3/d2b/class_tcp_manager.html#a08347f21c9824a4ae7b489813df9fb65" title="TcpManager::AcceptNewUser" alt="" coords="232,5,427,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a813e5f22b8c19b30f7e611f93aa20f00"></a><!-- doxytag: member="TcpManager::UserLeave" ref="a813e5f22b8c19b30f7e611f93aa20f00" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d2b/class_tcp_manager.html#a813e5f22b8c19b30f7e611f93aa20f00">TcpManager::UserLeave</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>用户退出处理函数</p>
+<p>用户退出时会将其从总线中删除,并且通知上层当前是哪个用户断开 </p>
+
+<p>重载<a class="el" href="../../d8/d3d/class_manager.html#a4dcec0c36539862fff683ce6fe714e39">Manager</a>。</p>
+
+<p>在文件<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html">TcpManager.cpp</a>第<a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html#l00169">169</a>行定义。</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d2b/class_tcp_manager_a813e5f22b8c19b30f7e611f93aa20f00_cgraph.png" border="0" usemap="#d3/d2b/class_tcp_manager_a813e5f22b8c19b30f7e611f93aa20f00_cgraph" alt=""/></div>
+<map name="d3/d2b/class_tcp_manager_a813e5f22b8c19b30f7e611f93aa20f00_cgraph" id="d3/d2b/class_tcp_manager_a813e5f22b8c19b30f7e611f93aa20f00_cgraph">
+<area shape="rect" id="node3" href="../../d8/d3d/class_manager.html#abbf01da0571bc291414df195e156183e" title="Manager::DelUserFromBus" alt="" coords="224,31,403,57"/><area shape="rect" id="node9" href="../../d8/d3d/class_manager.html#a0c8600b382a62d4d64de9f511008a11e" title="Manager::clientDisconnected" alt="" coords="218,81,409,108"/><area shape="rect" id="node11" href="../../d8/d3d/class_manager.html#a0a01248007c42351f1683ec62d4e525f" title="Manager::serverDisconnected" alt="" coords="217,132,410,159"/><area shape="rect" id="node5" href="../../d3/d1b/class_bus.html#abca1d169269aef5452d883dbde4dfa2e" title="Bus::GetGuid" alt="" coords="459,5,560,32"/><area shape="rect" id="node7" href="../../d3/d1b/class_bus.html#a41741335e09142bc692c058e9e9272f8" title="Bus::Delete" alt="" coords="464,56,555,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d2b/class_tcp_manager_a813e5f22b8c19b30f7e611f93aa20f00_icgraph.png" border="0" usemap="#d3/d2b/class_tcp_manager_a813e5f22b8c19b30f7e611f93aa20f00_icgraph" alt=""/></div>
+<map name="d3/d2b/class_tcp_manager_a813e5f22b8c19b30f7e611f93aa20f00_icgraph" id="d3/d2b/class_tcp_manager_a813e5f22b8c19b30f7e611f93aa20f00_icgraph">
+<area shape="rect" id="node3" href="../../d3/d2b/class_tcp_manager.html#a08347f21c9824a4ae7b489813df9fb65" title="TcpManager::AcceptNewUser" alt="" coords="216,5,411,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="affb5b63ed55b162da8b9d39a09919cb8"></a><!-- doxytag: member="TcpManager::m_port" ref="affb5b63ed55b162da8b9d39a09919cb8" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d3/d2b/class_tcp_manager.html#affb5b63ed55b162da8b9d39a09919cb8">TcpManager::m_port</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d3/d5f/_tcp_manager_8h_source.html">TcpManager.h</a>第<a class="el" href="../../d3/d5f/_tcp_manager_8h_source.html#l00026">26</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a39853ba2b5fe90542b16d094f6210dc1"></a><!-- doxytag: member="TcpManager::m_server" ref="a39853ba2b5fe90542b16d094f6210dc1" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpServer* <a class="el" href="../../d3/d2b/class_tcp_manager.html#a39853ba2b5fe90542b16d094f6210dc1">TcpManager::m_server</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d3/d5f/_tcp_manager_8h_source.html">TcpManager.h</a>第<a class="el" href="../../d3/d5f/_tcp_manager_8h_source.html#l00028">28</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="adc2edf58e1953ec75d36793352033867"></a><!-- doxytag: member="TcpManager::m_socket" ref="adc2edf58e1953ec75d36793352033867" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QTcpSocket* <a class="el" href="../../d3/d2b/class_tcp_manager.html#adc2edf58e1953ec75d36793352033867">TcpManager::m_socket</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d3/d5f/_tcp_manager_8h_source.html">TcpManager.h</a>第<a class="el" href="../../d3/d5f/_tcp_manager_8h_source.html#l00027">27</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d3/d5f/_tcp_manager_8h_source.html">TcpManager.h</a></li>
+<li><a class="el" href="../../d7/d7c/_tcp_manager_8cpp_source.html">TcpManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:41 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

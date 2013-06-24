@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: IProvider.h源文件</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">IProvider.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d6/d82/_i_provider_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 ﻿#ifndef IPROVIDER_H
+<a name="l00002"></a>00002 <span class="preprocessor">#define IPROVIDER_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="../../db/d1f/_common_8h.html">common/Common.h</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d5b/_bus_8h.html">Bus.h</a>&quot;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd5/_protocol_defines_8h.html">ProtocolDefines.h</a>&quot;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="../../d0/d0d/_protocol_factory_8h.html">ProtocolFactory.h</a>&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d2b/_i_protocol_8h.html">IProtocol.h</a>&quot;</span>
+<a name="l00009"></a>00009 
+<a name="l00010"></a>00010 QT_BEGIN_HEADER
+<a name="l00011"></a>00011 
+<a name="l00012"></a>00012 QT_BEGIN_NAMESPACE
+<a name="l00013"></a>00013 <span class="keyword">class </span><a class="code" href="../../db/dfd/class_i_protocol.html" title="抽象协议接口">IProtocol</a>;
+<a name="l00014"></a>00014 
+<a name="l00015"></a><a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9">00015</a> <span class="keyword">enum</span> <a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9">State_Tag</a>
+<a name="l00016"></a>00016 {
+<a name="l00017"></a><a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9ae962ea8b0b3a376575ad0e616eeac474">00017</a>     <a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9ae962ea8b0b3a376575ad0e616eeac474">Invalid</a> = 0,
+<a name="l00018"></a><a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9a35ffe22508aa955d0e66f52e5e0d760d">00018</a>     <a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9a35ffe22508aa955d0e66f52e5e0d760d">WaitFlag</a>,
+<a name="l00019"></a><a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9a32a974561f1246c560b8a12adc56436e">00019</a>     <a class="code" href="../../d6/d82/_i_provider_8h.html#a09ef85db8870fc231a859efc84e9fea9a32a974561f1246c560b8a12adc56436e">WaitData</a>
+<a name="l00020"></a>00020 };
+<a name="l00021"></a>00021 
+<a name="l00028"></a><a class="code" href="../../d8/deb/class_i_provider.html">00028</a> <span class="keyword">class </span><a class="code" href="../../d8/deb/class_i_provider.html" title="抽象传输接口">IProvider</a> : <span class="keyword">public</span> QObject
+<a name="l00029"></a>00029 {
+<a name="l00030"></a>00030     Q_OBJECT
+<a name="l00031"></a>00031 <span class="keyword">public</span>:
+<a name="l00032"></a><a class="code" href="../../d8/deb/class_i_provider.html#acc9f1395a860cabc5d232ea67213f696">00032</a>     <a class="code" href="../../d8/deb/class_i_provider.html#acc9f1395a860cabc5d232ea67213f696">IProvider</a>()
+<a name="l00033"></a>00033     {
+<a name="l00034"></a>00034         <a class="code" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">m_bus</a> = NULL;
+<a name="l00035"></a>00035         <a class="code" href="../../d8/deb/class_i_provider.html#a9b369c97859b92a5af90f18def021f10">m_protocol</a> = NULL;
+<a name="l00036"></a>00036     }
+<a name="l00037"></a>00037 
+<a name="l00038"></a><a class="code" href="../../d8/deb/class_i_provider.html#a1b9d1381f501d5af81d85727a315c767">00038</a>     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/deb/class_i_provider.html#a1b9d1381f501d5af81d85727a315c767">Send</a>(QByteArray&amp; b) {}
+<a name="l00039"></a><a class="code" href="../../d8/deb/class_i_provider.html#a2fd251c6bfc64dd265e83635eb60c35d">00039</a>     <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="../../d8/deb/class_i_provider.html#a2fd251c6bfc64dd265e83635eb60c35d">Send</a>(QString&amp; b) {}
+<a name="l00040"></a>00040 
+<a name="l00041"></a><a class="code" href="../../d8/deb/class_i_provider.html#a07ed4e6a6361a15896f67816ecedc56f">00041</a>     <span class="keywordtype">void</span> <a class="code" href="../../d8/deb/class_i_provider.html#a07ed4e6a6361a15896f67816ecedc56f">setupReciveManager</a>(<a class="code" href="../../db/dfd/class_i_protocol.html" title="抽象协议接口">IProtocol</a>* protocol)
+<a name="l00042"></a>00042     {
+<a name="l00043"></a>00043         connect(protocol, SIGNAL(recivedDataForAll(QString&amp;, QByteArray&amp;, QByteArray&amp;)), <a class="code" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">m_bus</a>, SLOT(RecivedDataForAll(QString&amp;, QByteArray&amp;, QByteArray&amp;)), Qt::UniqueConnection);
+<a name="l00044"></a>00044         connect(protocol, SIGNAL(recivedDataForMe(QByteArray&amp;, QByteArray&amp;)), <a class="code" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">m_bus</a>, SLOT(RecivedDataForMe(QByteArray&amp;, QByteArray&amp;)), Qt::UniqueConnection);
+<a name="l00045"></a>00045         connect(protocol, SIGNAL(recivedDataForOther(QString&amp;, QByteArray&amp;, QByteArray&amp;)), <a class="code" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">m_bus</a>, SLOT(RecivedDataForOther(QString&amp;, QByteArray&amp;, QByteArray&amp;)), Qt::UniqueConnection);
+<a name="l00046"></a>00046     }
+<a name="l00047"></a>00047 
+<a name="l00048"></a><a class="code" href="../../d8/deb/class_i_provider.html#a2453ba08ca4e222b26cbc67aad3c785b">00048</a>     <span class="keywordtype">void</span> <a class="code" href="../../d8/deb/class_i_provider.html#a2453ba08ca4e222b26cbc67aad3c785b">unsetupReciveManager</a>(<a class="code" href="../../db/dfd/class_i_protocol.html" title="抽象协议接口">IProtocol</a>* protocol)
+<a name="l00049"></a>00049     {
+<a name="l00050"></a>00050         disconnect(protocol, SIGNAL(recivedDataForAll(QString&amp;, QByteArray&amp;, QByteArray&amp;)), <a class="code" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">m_bus</a>, SLOT(RecivedDataForAll(QString&amp;, QByteArray&amp;, QByteArray&amp;)));
+<a name="l00051"></a>00051         disconnect(protocol, SIGNAL(recivedDataForMe(QByteArray&amp;, QByteArray&amp;)), <a class="code" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">m_bus</a>, SLOT(RecivedDataForMe(QByteArray&amp;, QByteArray&amp;)));
+<a name="l00052"></a>00052         disconnect(protocol, SIGNAL(recivedDataForOther(QString&amp;, QByteArray&amp;, QByteArray&amp;)), <a class="code" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">m_bus</a>, SLOT(RecivedDataForOther(QString&amp;, QByteArray&amp;, QByteArray&amp;)));
+<a name="l00053"></a>00053     }
+<a name="l00054"></a><a class="code" href="../../d8/deb/class_i_provider.html#a59cbd41852a5d9ee867e6b2d90dfe2bb">00054</a>     <span class="keywordtype">void</span> <a class="code" href="../../d8/deb/class_i_provider.html#a59cbd41852a5d9ee867e6b2d90dfe2bb">createProtocol</a>(quint8 version)
+<a name="l00055"></a>00055     {
+<a name="l00056"></a>00056         QString str;
+<a name="l00057"></a>00057 
+<a name="l00058"></a>00058         <span class="keywordflow">if</span>(version == 0x01)
+<a name="l00059"></a>00059         {
+<a name="l00060"></a>00060             str = <a class="code" href="../../d9/dd5/_protocol_defines_8h.html#a4f09280df32d9b4e4bc5f36f52a9ea8b">_PROTOCOL_1_0</a>;
+<a name="l00061"></a>00061         }
+<a name="l00062"></a>00062         <span class="keywordflow">else</span> <span class="keywordflow">if</span>(version == 0x02)
+<a name="l00063"></a>00063         {
+<a name="l00064"></a>00064             str = <a class="code" href="../../d9/dd5/_protocol_defines_8h.html#ad1bf9ccfd7e1e0163fa1f393fbdac898">_PROTOCOL_2_0</a>;
+<a name="l00065"></a>00065         }
+<a name="l00066"></a>00066 
+<a name="l00067"></a>00067         <a class="code" href="../../d8/deb/class_i_provider.html#a9b369c97859b92a5af90f18def021f10">m_protocol</a> = <a class="code" href="../../dd/d11/class_protocol_factory.html#a4eb508f17eff0bb2ad308ee9b99f788c">ProtocolFactory::Create</a>(str);
+<a name="l00068"></a>00068     }
+<a name="l00069"></a>00069 <span class="keyword">public</span>:
+<a name="l00070"></a><a class="code" href="../../d8/deb/class_i_provider.html#abf1ee6896ab1af1b6ebd0567df530330">00070</a>     QByteArray <a class="code" href="../../d8/deb/class_i_provider.html#abf1ee6896ab1af1b6ebd0567df530330">m_data</a>;
+<a name="l00071"></a><a class="code" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">00071</a>     <a class="code" href="../../d3/d1b/class_bus.html" title="实现数据通讯总线">Bus</a>* <a class="code" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">m_bus</a>;
+<a name="l00072"></a><a class="code" href="../../d8/deb/class_i_provider.html#a9b369c97859b92a5af90f18def021f10">00072</a>     <a class="code" href="../../db/dfd/class_i_protocol.html" title="抽象协议接口">IProtocol</a>* <a class="code" href="../../d8/deb/class_i_provider.html#a9b369c97859b92a5af90f18def021f10">m_protocol</a>;
+<a name="l00073"></a>00073 
+<a name="l00074"></a>00074 <span class="keyword">public</span> Q_SLOTS:
+<a name="l00075"></a><a class="code" href="../../d8/deb/class_i_provider.html#a4983f9f02755027ffc31b12bc6282718">00075</a>     <span class="keywordtype">void</span> <a class="code" href="../../d8/deb/class_i_provider.html#a4983f9f02755027ffc31b12bc6282718">DataArrive</a>() {}
+<a name="l00076"></a>00076 };
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078 
+<a name="l00079"></a>00079 QT_END_NAMESPACE
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081 QT_END_HEADER
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083 <span class="preprocessor">#endif // IPROVIDER_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:40 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

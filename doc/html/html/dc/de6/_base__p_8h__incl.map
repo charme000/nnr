@@ -1,0 +1,20 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$d5/df1/_base_8h.html" title="nnr/Base.h" alt="" coords="2389,80,2475,107"/>
+<area shape="rect" id="node63" href="$d9/d68/_manager_factory_8h.html" title="nnr/ManagerFactory.h" alt="" coords="2005,80,2155,107"/>
+<area shape="rect" id="node66" href="$d7/d86/_manager_8h.html" title="Manager.h" alt="" coords="2136,229,2219,256"/>
+<area shape="rect" id="node69" href="$d7/d5b/_bus_8h.html" title="Bus.h" alt="" coords="2020,453,2076,480"/>
+<area shape="rect" id="node5" href="$db/d1f/_common_8h.html" title="common/Common.h" alt="" coords="1675,677,1813,704"/>
+<area shape="rect" id="node59" href="$dc/d0d/_macro_8h.html" title="nnr/Macro.h" alt="" coords="3173,752,3264,779"/>
+<area shape="rect" id="node61" href="$d8/de2/_defines_8h.html" title="nnr/Defines.h" alt="" coords="3288,752,3387,779"/>
+<area shape="rect" id="node76" href="$d3/d5f/_tcp_manager_8h.html" title="TcpManager.h" alt="" coords="2013,155,2117,181"/>
+<area shape="rect" id="node116" href="$d6/d03/_pipe_manager_8h.html" title="PipeManager.h" alt="" coords="1880,155,1989,181"/>
+<area shape="rect" id="node72" href="$d1/dd7/_user_unit_8h.html" title="UserUnit.h" alt="" coords="1880,528,1963,555"/>
+<area shape="rect" id="node80" href="$d5/d3f/_provider_factory_8h.html" title="ProviderFactory.h" alt="" coords="1821,229,1944,256"/>
+<area shape="rect" id="node83" href="$d6/d82/_i_provider_8h.html" title="IProvider.h" alt="" coords="1624,379,1707,405"/>
+<area shape="rect" id="node100" href="$d9/db3/_tcp_provider_8h.html" title="TcpProvider.h" alt="" coords="1795,304,1895,331"/>
+<area shape="rect" id="node105" href="$d5/d3d/_pipe_provider_8h.html" title="PipeProvider.h" alt="" coords="1513,304,1617,331"/>
+<area shape="rect" id="node87" href="$d9/dd5/_protocol_defines_8h.html" title="ProtocolDefines.h" alt="" coords="1531,603,1655,629"/>
+<area shape="rect" id="node89" href="$d0/d0d/_protocol_factory_8h.html" title="ProtocolFactory.h" alt="" coords="1331,453,1456,480"/>
+<area shape="rect" id="node92" href="$d7/d2b/_i_protocol_8h.html" title="IProtocol.h" alt="" coords="1423,603,1507,629"/>
+<area shape="rect" id="node95" href="$da/d7e/_package_protocol__1__0_8h.html" title="PackageProtocol_1_0.h" alt="" coords="1395,528,1555,555"/>
+</map>

@@ -1,0 +1,446 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: PipeManager类参考</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="../../inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">公有槽</a> &#124;
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-attribs">公有属性</a>  </div>
+  <div class="headertitle">
+<div class="title">PipeManager类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="PipeManager" --><!-- doxytag: inherits="Manager" -->
+<p>利用本地套接字(windows平台下为管道)实现通讯的管理器接口  
+ <a href="../../de/da5/class_pipe_manager.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d6/d03/_pipe_manager_8h_source.html">PipeManager.h</a>&gt;</code></p>
+<div class="dynheader">
+类PipeManager继承关系图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d7/d67/class_pipe_manager__inherit__graph.png" border="0" usemap="#_pipe_manager_inherit__map" alt="Inheritance graph"/></div>
+<map name="_pipe_manager_inherit__map" id="_pipe_manager_inherit__map">
+<area shape="rect" id="node2" href="../../d8/d3d/class_manager.html" title="实现通讯中管理监听和接受等操作的接口" alt="" coords="19,5,91,32"/></map>
+<center><span class="legend">[<a href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+PipeManager合作图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/d90/class_pipe_manager__coll__graph.png" border="0" usemap="#_pipe_manager_coll__map" alt="Collaboration graph"/></div>
+<map name="_pipe_manager_coll__map" id="_pipe_manager_coll__map">
+<area shape="rect" id="node2" href="../../d8/d3d/class_manager.html" title="实现通讯中管理监听和接受等操作的接口" alt="" coords="47,96,119,123"/><area shape="rect" id="node4" href="../../da/dda/class_user_unit.html" title="参与连接以及通讯的实体定义类" alt="" coords="5,5,77,32"/><area shape="rect" id="node6" href="../../d3/d1b/class_bus.html" title="实现数据通讯总线" alt="" coords="101,5,147,32"/></map>
+<center><span class="legend">[<a href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../dd/dc1/class_pipe_manager-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-slots"></a>
+公有槽</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da5/class_pipe_manager.html#a58172081633b870854d5752c9f2c109b">AcceptNewUser</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da5/class_pipe_manager.html#aebb6108812c816691a5db67549b34a2d">UserLeave</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da5/class_pipe_manager.html#a99a0cf4815f3df8d750eac8d96d47bfb">ConnectError</a> (QAbstractSocket::SocketError err)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da5/class_pipe_manager.html#a608ffda2bd552e167527906f8af29676">ByteWriten</a> (qint64 len)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da5/class_pipe_manager.html#aebd3f1f499a185fdb4f7a73b770dd8d2">PipeManager</a> (<a class="el" href="../../d3/d1b/class_bus.html">Bus</a> &amp;bus, QString &amp;attribute, QString &amp;value, QString &amp;guidName)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da5/class_pipe_manager.html#afea1781cab3eadcd2b1244dfdab55cf9">~PipeManager</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QLocalSocket *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da5/class_pipe_manager.html#a27ffa74c41682836d0d084d7e8a42933">m_socket</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QLocalServer *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da5/class_pipe_manager.html#a645a0d7e957c519ea022fed667fb004c">m_server</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da5/class_pipe_manager.html#a099f83cba1e38a016bd18bd5ac8d5274">m_pipeName</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>利用本地套接字(windows平台下为管道)实现通讯的管理器接口 </p>
+<dl class="version"><dt><b>版本:</b></dt><dd>1.0 </dd></dl>
+<dl class="date"><dt><b>日期:</b></dt><dd>2012.12.1-2012.1.30 </dd></dl>
+<dl class="pre"><dt><b>前置条件:</b></dt><dd>一般该类的函数不需要显式的调用,Base类会管理并且自动调用 </dd></dl>
+
+<p>在文件<a class="el" href="../../d6/d03/_pipe_manager_8h_source.html">PipeManager.h</a>第<a class="el" href="../../d6/d03/_pipe_manager_8h_source.html#l00012">12</a>行定义。</p>
+</div><hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="aebd3f1f499a185fdb4f7a73b770dd8d2"></a><!-- doxytag: member="PipeManager::PipeManager" ref="aebd3f1f499a185fdb4f7a73b770dd8d2" args="(Bus &amp;bus, QString &amp;attribute, QString &amp;value, QString &amp;guidName)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QT_BEGIN_NAMESPACE <a class="el" href="../../de/da5/class_pipe_manager.html#aebd3f1f499a185fdb4f7a73b770dd8d2">PipeManager::PipeManager</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d3/d1b/class_bus.html">Bus</a> &amp;&#160;</td>
+          <td class="paramname"><em>bus</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>attribute</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>guidName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [explicit]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>本地套接字管理器构造函数 </p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bus</td><td>通讯总线 </td></tr>
+    <tr><td class="paramname">attribute</td><td>管理器属性 </td></tr>
+    <tr><td class="paramname">value</td><td>连接标识 </td></tr>
+    <tr><td class="paramname">guidName</td><td>自身标识uuid</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="see"><dt><b>参见:</b></dt><dd><a class="el" href="../../d8/d3d/class_manager.html#ab5294542fe9bfe5bd37382fb207373d6">Manager(Bus&amp; bus, QString&amp; attribute, QString&amp; value, QString&amp; guidName)</a>: </dd></dl>
+
+<p>在文件<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html">PipeManager.cpp</a>第<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html#l00020">20</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afea1781cab3eadcd2b1244dfdab55cf9"></a><!-- doxytag: member="PipeManager::~PipeManager" ref="afea1781cab3eadcd2b1244dfdab55cf9" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/da5/class_pipe_manager.html#afea1781cab3eadcd2b1244dfdab55cf9">PipeManager::~PipeManager</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>本地套接字管理器析构函数 </p>
+
+<p>在文件<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html">PipeManager.cpp</a>第<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html#l00028">28</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a58172081633b870854d5752c9f2c109b"></a><!-- doxytag: member="PipeManager::AcceptNewUser" ref="a58172081633b870854d5752c9f2c109b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/da5/class_pipe_manager.html#a58172081633b870854d5752c9f2c109b">PipeManager::AcceptNewUser</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>保证连接建立后,创建通讯用户实体 该实体会管理通讯中断和连接错误已经发送字节回馈等功能</p>
+<p>连接建立后,为连接标识生成一个固定的通讯用户,并且将其假如到通讯总线中.</p>
+<dl class="warning"><dt><b>警告:</b></dt><dd>在加入总线之前需要互相发送自身标识,如果标识无效或者重复,都会导致失败. </dd></dl>
+
+<p>重载<a class="el" href="../../d8/d3d/class_manager.html#ae07ea2166a9a1648e562f4b5c5c40947">Manager</a>。</p>
+
+<p>在文件<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html">PipeManager.cpp</a>第<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html#l00114">114</a>行定义。</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da5/class_pipe_manager_a58172081633b870854d5752c9f2c109b_cgraph.png" border="0" usemap="#de/da5/class_pipe_manager_a58172081633b870854d5752c9f2c109b_cgraph" alt=""/></div>
+<map name="de/da5/class_pipe_manager_a58172081633b870854d5752c9f2c109b_cgraph" id="de/da5/class_pipe_manager_a58172081633b870854d5752c9f2c109b_cgraph">
+<area shape="rect" id="node3" href="../../de/da5/class_pipe_manager.html#a99a0cf4815f3df8d750eac8d96d47bfb" title="PipeManager::ConnectError" alt="" coords="258,43,441,69"/><area shape="rect" id="node7" href="../../de/da5/class_pipe_manager.html#aebb6108812c816691a5db67549b34a2d" title="PipeManager::UserLeave" alt="" coords="266,119,433,145"/><area shape="rect" id="node19" href="../../de/da5/class_pipe_manager.html#a608ffda2bd552e167527906f8af29676" title="PipeManager::ByteWriten" alt="" coords="264,195,435,221"/><area shape="rect" id="node23" href="../../d8/d3d/class_manager.html#ae19a85f7c261a55279fd65019daf7dca" title="Manager::AddUserToBus" alt="" coords="266,245,433,272"/><area shape="rect" id="node27" href="../../d8/d3d/class_manager.html#a434ed4720130a41539f52d1935852523" title="Manager::newClientConnectd" alt="" coords="254,296,445,323"/><area shape="rect" id="node29" href="../../d8/d3d/class_manager.html#abbba106bb652d4d762d25f2aec259613" title="Manager::connectToServer" alt="" coords="261,347,437,373"/><area shape="rect" id="node31" href="../../d8/d3d/class_manager.html#addc2328d9550f4e31686f8416e870e35" title="Manager::addToBusFailed" alt="" coords="263,397,436,424"/><area shape="rect" id="node5" href="../../d8/d3d/class_manager.html#af802bd0ffca83dc094882bc18bd25cc9" title="Manager::connectError" alt="" coords="513,5,668,32"/><area shape="rect" id="node9" href="../../d8/d3d/class_manager.html#abbf01da0571bc291414df195e156183e" title="Manager::DelUserFromBus" alt="" coords="501,56,680,83"/><area shape="rect" id="node15" href="../../d8/d3d/class_manager.html#a0c8600b382a62d4d64de9f511008a11e" title="Manager::clientDisconnected" alt="" coords="495,107,686,133"/><area shape="rect" id="node17" href="../../d8/d3d/class_manager.html#a0a01248007c42351f1683ec62d4e525f" title="Manager::serverDisconnected" alt="" coords="494,157,687,184"/><area shape="rect" id="node11" href="../../d3/d1b/class_bus.html#abca1d169269aef5452d883dbde4dfa2e" title="Bus::GetGuid" alt="" coords="736,31,837,57"/><area shape="rect" id="node13" href="../../d3/d1b/class_bus.html#a41741335e09142bc692c058e9e9272f8" title="Bus::Delete" alt="" coords="741,81,832,108"/><area shape="rect" id="node21" href="../../d8/d3d/class_manager.html#accc441991746f76ba4bc00dd993407fa" title="Manager::byteWriten" alt="" coords="519,208,662,235"/><area shape="rect" id="node25" href="../../d3/d1b/class_bus.html#a16445102f6f61a21eaa7e35bcfe881f9" title="Bus::Add" alt="" coords="553,259,629,285"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a608ffda2bd552e167527906f8af29676"></a><!-- doxytag: member="PipeManager::ByteWriten" ref="a608ffda2bd552e167527906f8af29676" args="(qint64 len)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/da5/class_pipe_manager.html#a608ffda2bd552e167527906f8af29676">PipeManager::ByteWriten</a> </td>
+          <td>(</td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>len</em></td><td>)</td>
+          <td><code> [slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>写入字节报告函数</p>
+<p>通知上层当前已经传送的字节数</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">len</td><td>写入字节数 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载<a class="el" href="../../d8/d3d/class_manager.html#a58610114fd747f98eb528e578b01dc50">Manager</a>。</p>
+
+<p>在文件<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html">PipeManager.cpp</a>第<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html#l00211">211</a>行定义。</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da5/class_pipe_manager_a608ffda2bd552e167527906f8af29676_cgraph.png" border="0" usemap="#de/da5/class_pipe_manager_a608ffda2bd552e167527906f8af29676_cgraph" alt=""/></div>
+<map name="de/da5/class_pipe_manager_a608ffda2bd552e167527906f8af29676_cgraph" id="de/da5/class_pipe_manager_a608ffda2bd552e167527906f8af29676_cgraph">
+<area shape="rect" id="node3" href="../../d8/d3d/class_manager.html#accc441991746f76ba4bc00dd993407fa" title="Manager::byteWriten" alt="" coords="225,5,367,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da5/class_pipe_manager_a608ffda2bd552e167527906f8af29676_icgraph.png" border="0" usemap="#de/da5/class_pipe_manager_a608ffda2bd552e167527906f8af29676_icgraph" alt=""/></div>
+<map name="de/da5/class_pipe_manager_a608ffda2bd552e167527906f8af29676_icgraph" id="de/da5/class_pipe_manager_a608ffda2bd552e167527906f8af29676_icgraph">
+<area shape="rect" id="node3" href="../../de/da5/class_pipe_manager.html#a58172081633b870854d5752c9f2c109b" title="PipeManager::AcceptNewUser" alt="" coords="225,5,423,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a99a0cf4815f3df8d750eac8d96d47bfb"></a><!-- doxytag: member="PipeManager::ConnectError" ref="a99a0cf4815f3df8d750eac8d96d47bfb" args="(QAbstractSocket::SocketError err)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/da5/class_pipe_manager.html#a99a0cf4815f3df8d750eac8d96d47bfb">PipeManager::ConnectError</a> </td>
+          <td>(</td>
+          <td class="paramtype">QAbstractSocket::SocketError&#160;</td>
+          <td class="paramname"><em>err</em></td><td>)</td>
+          <td><code> [slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>连接错误处理函数</p>
+<p>通知上层当前错误发生的代码</p>
+<dl class="params"><dt><b>参数:</b></dt><dd>
+  <table class="params">
+    <tr><td class="paramname">err</td><td>错误码 </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>重载<a class="el" href="../../d8/d3d/class_manager.html#a9d43d3b35625946ba1a4083f3a8b35dc">Manager</a>。</p>
+
+<p>在文件<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html">PipeManager.cpp</a>第<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html#l00198">198</a>行定义。</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da5/class_pipe_manager_a99a0cf4815f3df8d750eac8d96d47bfb_cgraph.png" border="0" usemap="#de/da5/class_pipe_manager_a99a0cf4815f3df8d750eac8d96d47bfb_cgraph" alt=""/></div>
+<map name="de/da5/class_pipe_manager_a99a0cf4815f3df8d750eac8d96d47bfb_cgraph" id="de/da5/class_pipe_manager_a99a0cf4815f3df8d750eac8d96d47bfb_cgraph">
+<area shape="rect" id="node3" href="../../d8/d3d/class_manager.html#af802bd0ffca83dc094882bc18bd25cc9" title="Manager::connectError" alt="" coords="237,5,392,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da5/class_pipe_manager_a99a0cf4815f3df8d750eac8d96d47bfb_icgraph.png" border="0" usemap="#de/da5/class_pipe_manager_a99a0cf4815f3df8d750eac8d96d47bfb_icgraph" alt=""/></div>
+<map name="de/da5/class_pipe_manager_a99a0cf4815f3df8d750eac8d96d47bfb_icgraph" id="de/da5/class_pipe_manager_a99a0cf4815f3df8d750eac8d96d47bfb_icgraph">
+<area shape="rect" id="node3" href="../../de/da5/class_pipe_manager.html#a58172081633b870854d5752c9f2c109b" title="PipeManager::AcceptNewUser" alt="" coords="238,5,437,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aebb6108812c816691a5db67549b34a2d"></a><!-- doxytag: member="PipeManager::UserLeave" ref="aebb6108812c816691a5db67549b34a2d" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/da5/class_pipe_manager.html#aebb6108812c816691a5db67549b34a2d">PipeManager::UserLeave</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>用户退出处理函数</p>
+<p>用户退出时会将其从总线中删除,并且通知上层当前是哪个用户断开 </p>
+
+<p>重载<a class="el" href="../../d8/d3d/class_manager.html#a4dcec0c36539862fff683ce6fe714e39">Manager</a>。</p>
+
+<p>在文件<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html">PipeManager.cpp</a>第<a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html#l00169">169</a>行定义。</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da5/class_pipe_manager_aebb6108812c816691a5db67549b34a2d_cgraph.png" border="0" usemap="#de/da5/class_pipe_manager_aebb6108812c816691a5db67549b34a2d_cgraph" alt=""/></div>
+<map name="de/da5/class_pipe_manager_aebb6108812c816691a5db67549b34a2d_cgraph" id="de/da5/class_pipe_manager_aebb6108812c816691a5db67549b34a2d_cgraph">
+<area shape="rect" id="node3" href="../../d8/d3d/class_manager.html#abbf01da0571bc291414df195e156183e" title="Manager::DelUserFromBus" alt="" coords="229,31,408,57"/><area shape="rect" id="node9" href="../../d8/d3d/class_manager.html#a0c8600b382a62d4d64de9f511008a11e" title="Manager::clientDisconnected" alt="" coords="223,81,414,108"/><area shape="rect" id="node11" href="../../d8/d3d/class_manager.html#a0a01248007c42351f1683ec62d4e525f" title="Manager::serverDisconnected" alt="" coords="222,132,415,159"/><area shape="rect" id="node5" href="../../d3/d1b/class_bus.html#abca1d169269aef5452d883dbde4dfa2e" title="Bus::GetGuid" alt="" coords="464,5,565,32"/><area shape="rect" id="node7" href="../../d3/d1b/class_bus.html#a41741335e09142bc692c058e9e9272f8" title="Bus::Delete" alt="" coords="469,56,560,83"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/da5/class_pipe_manager_aebb6108812c816691a5db67549b34a2d_icgraph.png" border="0" usemap="#de/da5/class_pipe_manager_aebb6108812c816691a5db67549b34a2d_icgraph" alt=""/></div>
+<map name="de/da5/class_pipe_manager_aebb6108812c816691a5db67549b34a2d_icgraph" id="de/da5/class_pipe_manager_aebb6108812c816691a5db67549b34a2d_icgraph">
+<area shape="rect" id="node3" href="../../de/da5/class_pipe_manager.html#a58172081633b870854d5752c9f2c109b" title="PipeManager::AcceptNewUser" alt="" coords="222,5,421,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a099f83cba1e38a016bd18bd5ac8d5274"></a><!-- doxytag: member="PipeManager::m_pipeName" ref="a099f83cba1e38a016bd18bd5ac8d5274" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString <a class="el" href="../../de/da5/class_pipe_manager.html#a099f83cba1e38a016bd18bd5ac8d5274">PipeManager::m_pipeName</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d03/_pipe_manager_8h_source.html">PipeManager.h</a>第<a class="el" href="../../d6/d03/_pipe_manager_8h_source.html#l00029">29</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a645a0d7e957c519ea022fed667fb004c"></a><!-- doxytag: member="PipeManager::m_server" ref="a645a0d7e957c519ea022fed667fb004c" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLocalServer* <a class="el" href="../../de/da5/class_pipe_manager.html#a645a0d7e957c519ea022fed667fb004c">PipeManager::m_server</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d03/_pipe_manager_8h_source.html">PipeManager.h</a>第<a class="el" href="../../d6/d03/_pipe_manager_8h_source.html#l00028">28</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a27ffa74c41682836d0d084d7e8a42933"></a><!-- doxytag: member="PipeManager::m_socket" ref="a27ffa74c41682836d0d084d7e8a42933" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QLocalSocket* <a class="el" href="../../de/da5/class_pipe_manager.html#a27ffa74c41682836d0d084d7e8a42933">PipeManager::m_socket</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d03/_pipe_manager_8h_source.html">PipeManager.h</a>第<a class="el" href="../../d6/d03/_pipe_manager_8h_source.html#l00027">27</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d6/d03/_pipe_manager_8h_source.html">PipeManager.h</a></li>
+<li><a class="el" href="../../d1/dc7/_pipe_manager_8cpp_source.html">PipeManager.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:41 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

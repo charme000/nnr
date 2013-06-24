@@ -1,0 +1,18 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$db/d1f/_common_8h.html" title="common/Common.h" alt="" coords="1675,603,1813,629"/>
+<area shape="rect" id="node61" href="$d7/d86/_manager_8h.html" title="Manager.h" alt="" coords="2089,155,2172,181"/>
+<area shape="rect" id="node64" href="$d7/d5b/_bus_8h.html" title="Bus.h" alt="" coords="2012,379,2068,405"/>
+<area shape="rect" id="node71" href="$d3/d5f/_tcp_manager_8h.html" title="TcpManager.h" alt="" coords="1935,80,2039,107"/>
+<area shape="rect" id="node111" href="$d6/d03/_pipe_manager_8h.html" title="PipeManager.h" alt="" coords="2113,80,2223,107"/>
+<area shape="rect" id="node57" href="$dc/d0d/_macro_8h.html" title="nnr/Macro.h" alt="" coords="3173,677,3264,704"/>
+<area shape="rect" id="node59" href="$d8/de2/_defines_8h.html" title="nnr/Defines.h" alt="" coords="3288,677,3387,704"/>
+<area shape="rect" id="node67" href="$d1/dd7/_user_unit_8h.html" title="UserUnit.h" alt="" coords="1775,453,1857,480"/>
+<area shape="rect" id="node75" href="$d5/d3f/_provider_factory_8h.html" title="ProviderFactory.h" alt="" coords="1763,155,1885,181"/>
+<area shape="rect" id="node78" href="$d6/d82/_i_provider_8h.html" title="IProvider.h" alt="" coords="1633,304,1716,331"/>
+<area shape="rect" id="node95" href="$d9/db3/_tcp_provider_8h.html" title="TcpProvider.h" alt="" coords="1818,229,1917,256"/>
+<area shape="rect" id="node100" href="$d5/d3d/_pipe_provider_8h.html" title="PipeProvider.h" alt="" coords="1522,229,1627,256"/>
+<area shape="rect" id="node82" href="$d9/dd5/_protocol_defines_8h.html" title="ProtocolDefines.h" alt="" coords="1541,528,1664,555"/>
+<area shape="rect" id="node84" href="$d0/d0d/_protocol_factory_8h.html" title="ProtocolFactory.h" alt="" coords="1340,379,1465,405"/>
+<area shape="rect" id="node87" href="$d7/d2b/_i_protocol_8h.html" title="IProtocol.h" alt="" coords="1433,528,1516,555"/>
+<area shape="rect" id="node90" href="$da/d7e/_package_protocol__1__0_8h.html" title="PackageProtocol_1_0.h" alt="" coords="1404,453,1564,480"/>
+</map>

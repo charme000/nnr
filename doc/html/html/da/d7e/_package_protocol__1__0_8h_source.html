@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: PackageProtocol_1_0.h源文件</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">PackageProtocol_1_0.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../da/d7e/_package_protocol__1__0_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 ﻿#ifndef RPCPROTOCOL_H
+<a name="l00002"></a>00002 <span class="preprocessor">#define RPCPROTOCOL_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d2b/_i_protocol_8h.html">IProtocol.h</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd5/_protocol_defines_8h.html">ProtocolDefines.h</a>&quot;</span>
+<a name="l00006"></a>00006 
+<a name="l00007"></a><a class="code" href="../../da/d7e/_package_protocol__1__0_8h.html#a10f3332880789e184798338f8fa41d51">00007</a> <span class="preprocessor">#define RPCPTC_HEADER_SIZE 0x2</span>
+<a name="l00008"></a><a class="code" href="../../da/d7e/_package_protocol__1__0_8h.html#a34b8d556e22f26591ecffd3e78926afd">00008</a> <span class="preprocessor"></span><span class="preprocessor">#define RPCPTC_BODY_SIZE 0x25</span>
+<a name="l00009"></a><a class="code" href="../../da/d7e/_package_protocol__1__0_8h.html#a87988225505216595279caa488351b02">00009</a> <span class="preprocessor"></span><span class="preprocessor">#define RPCPTC_INFO_SIZE 0x27</span>
+<a name="l00010"></a>00010 <span class="preprocessor"></span>
+<a name="l00016"></a><a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html">00016</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html" title="内置通讯协议UUID标识定义">_PACKAGE_UUID</a>
+<a name="l00017"></a>00017 {
+<a name="l00018"></a><a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html#a43e49de5d666cb638118579de4bb0666">00018</a>     quint32 <a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html#a43e49de5d666cb638118579de4bb0666">data1</a>;
+<a name="l00019"></a><a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html#a4881fb3deb3fb3314acbd9d978fd218b">00019</a>     quint16 <a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html#a4881fb3deb3fb3314acbd9d978fd218b">data2</a>;
+<a name="l00020"></a><a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html#a7847fa761705cd9a226bcf8287d43647">00020</a>     quint16 <a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html#a7847fa761705cd9a226bcf8287d43647">data3</a>;
+<a name="l00021"></a><a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html#a96c0c068f9dfe3a7d863467cc26bdf09">00021</a>     quint8 <a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html#a96c0c068f9dfe3a7d863467cc26bdf09">data4</a>[8];
+<a name="l00022"></a>00022 } <a class="code" href="../../da/d7e/_package_protocol__1__0_8h.html#a5448bffbe59676d3f1f225c1173faf2f">PACKAGE_UUID</a>, *<a class="code" href="../../da/d7e/_package_protocol__1__0_8h.html#a603f832c0fffc955bfc1e87b237bf095">PPACKAGE_UUID</a>;
+<a name="l00023"></a>00023 
+<a name="l00029"></a><a class="code" href="../../de/d9c/struct___p_r_o_t_o_c_o_l___h_e_a_d_e_r__.html">00029</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../de/d9c/struct___p_r_o_t_o_c_o_l___h_e_a_d_e_r__.html" title="内置通讯协议协议头定义">_PROTOCOL_HEADER_</a>
+<a name="l00030"></a>00030 {
+<a name="l00031"></a><a class="code" href="../../de/d9c/struct___p_r_o_t_o_c_o_l___h_e_a_d_e_r__.html#a4ab0b99b9cee418e5db15939846f1468">00031</a>     quint8 <a class="code" href="../../de/d9c/struct___p_r_o_t_o_c_o_l___h_e_a_d_e_r__.html#a4ab0b99b9cee418e5db15939846f1468">Sign</a>; <span class="comment">// 协议标识</span>
+<a name="l00032"></a><a class="code" href="../../de/d9c/struct___p_r_o_t_o_c_o_l___h_e_a_d_e_r__.html#a858fea573266a7243fd77a9431f895a0">00032</a>     quint8 <a class="code" href="../../de/d9c/struct___p_r_o_t_o_c_o_l___h_e_a_d_e_r__.html#a858fea573266a7243fd77a9431f895a0">Check</a>; <span class="comment">// 协议版本</span>
+<a name="l00033"></a>00033 } <a class="code" href="../../da/d7e/_package_protocol__1__0_8h.html#a018fed3fb0105f57ef7480dc515cda45">PROTOCOL_HEADER</a>, *<a class="code" href="../../da/d7e/_package_protocol__1__0_8h.html#a3e1bc8710b488140005e336a0e1de0e5">PPROTOCOL_HEADER</a>;
+<a name="l00034"></a>00034 
+<a name="l00040"></a><a class="code" href="../../d7/d36/struct___p_a_c_k_a_g_e___b_o_d_y__.html">00040</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d7/d36/struct___p_a_c_k_a_g_e___b_o_d_y__.html" title="内置通讯协议数据定义">_PACKAGE_BODY_</a>
+<a name="l00041"></a>00041 {
+<a name="l00042"></a><a class="code" href="../../d7/d36/struct___p_a_c_k_a_g_e___b_o_d_y__.html#a711f30ffaf50e9c1f706e589aab373dd">00042</a>     quint32 <a class="code" href="../../d7/d36/struct___p_a_c_k_a_g_e___b_o_d_y__.html#a711f30ffaf50e9c1f706e589aab373dd">Cmd</a>; <span class="comment">// 命令</span>
+<a name="l00043"></a><a class="code" href="../../d7/d36/struct___p_a_c_k_a_g_e___b_o_d_y__.html#af955b0fe5d3f939b14a9a5d6dd86e082">00043</a>     quint8 <a class="code" href="../../d7/d36/struct___p_a_c_k_a_g_e___b_o_d_y__.html#af955b0fe5d3f939b14a9a5d6dd86e082">Type</a>;
+<a name="l00044"></a><a class="code" href="../../d7/d36/struct___p_a_c_k_a_g_e___b_o_d_y__.html#a182f650f9ea91dab5688957a3cd8dd0d">00044</a>     <a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html" title="内置通讯协议UUID标识定义">PACKAGE_UUID</a> <a class="code" href="../../d7/d36/struct___p_a_c_k_a_g_e___b_o_d_y__.html#a182f650f9ea91dab5688957a3cd8dd0d">SrcAddr</a>; <span class="comment">//源地址</span>
+<a name="l00045"></a><a class="code" href="../../d7/d36/struct___p_a_c_k_a_g_e___b_o_d_y__.html#a0e08bb8d55d9755ee007e3414707d9af">00045</a>     <a class="code" href="../../d2/d16/struct___p_a_c_k_a_g_e___u_u_i_d.html" title="内置通讯协议UUID标识定义">PACKAGE_UUID</a> <a class="code" href="../../d7/d36/struct___p_a_c_k_a_g_e___b_o_d_y__.html#a0e08bb8d55d9755ee007e3414707d9af">DesAddr</a>; <span class="comment">//目标地址</span>
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 } <a class="code" href="../../da/d7e/_package_protocol__1__0_8h.html#ab2f190e72411ebc5a1f8ef893a87197b">PACKAGE_BODY</a>, *<a class="code" href="../../da/d7e/_package_protocol__1__0_8h.html#acfed871c3b25d9a7ee561cc6e3653605">PPACKAGE_BODY</a>;
+<a name="l00048"></a>00048 
+<a name="l00054"></a><a class="code" href="../../d9/dd5/struct___p_r_o_t_o_c_o_l___i_n_f_o__.html">00054</a> <span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="../../d9/dd5/struct___p_r_o_t_o_c_o_l___i_n_f_o__.html" title="内置通讯协议包定义">_PROTOCOL_INFO_</a>
+<a name="l00055"></a>00055 {
+<a name="l00056"></a><a class="code" href="../../d9/dd5/struct___p_r_o_t_o_c_o_l___i_n_f_o__.html#a33e056a97f02f8c7b3f4cee0a3516c93">00056</a>     <a class="code" href="../../de/d9c/struct___p_r_o_t_o_c_o_l___h_e_a_d_e_r__.html" title="内置通讯协议协议头定义">PROTOCOL_HEADER</a> <a class="code" href="../../d9/dd5/struct___p_r_o_t_o_c_o_l___i_n_f_o__.html#a33e056a97f02f8c7b3f4cee0a3516c93">Header</a>;
+<a name="l00057"></a><a class="code" href="../../d9/dd5/struct___p_r_o_t_o_c_o_l___i_n_f_o__.html#a2d40fe2c6032cd641d3798de4ac662f8">00057</a>     <a class="code" href="../../d7/d36/struct___p_a_c_k_a_g_e___b_o_d_y__.html" title="内置通讯协议数据定义">PACKAGE_BODY</a> <a class="code" href="../../d9/dd5/struct___p_r_o_t_o_c_o_l___i_n_f_o__.html#a2d40fe2c6032cd641d3798de4ac662f8">Body</a>;
+<a name="l00058"></a>00058 } <a class="code" href="../../da/d7e/_package_protocol__1__0_8h.html#a20e049239afe964f1af0e46f4d503acb">PROTOCOL_INFO</a>, *<a class="code" href="../../da/d7e/_package_protocol__1__0_8h.html#a78e073bb22b75edb7d81fc106f695e4e">PPROTOCOL_INFO</a>;
+<a name="l00059"></a>00059 
+<a name="l00060"></a><a class="code" href="../../db/d9b/class_package_protocol__1__0.html">00060</a> <span class="keyword">class </span><a class="code" href="../../db/d9b/class_package_protocol__1__0.html" title="内置通讯协议">PackageProtocol_1_0</a> : <span class="keyword">public</span> <a class="code" href="../../db/dfd/class_i_protocol.html" title="抽象协议接口">IProtocol</a>
+<a name="l00061"></a>00061 {
+<a name="l00062"></a>00062     Q_OBJECT
+<a name="l00063"></a>00063     <a class="code" href="../../dc/d0d/_macro_8h.html#abd1bb8aaadb2decb6ffdd8720f713d43">SINGELTON</a>(<a class="code" href="../../db/d9b/class_package_protocol__1__0.html" title="内置通讯协议">PackageProtocol_1_0</a>)
+<a name="l00064"></a>00064 <span class="keyword">public</span>:
+<a name="l00065"></a><a class="code" href="../../db/d9b/class_package_protocol__1__0.html#ad5befda2e298c015a9a9185b52ab7d5e">00065</a>     <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#ad5befda2e298c015a9a9185b52ab7d5e">PackageProtocol_1_0</a>()
+<a name="l00066"></a>00066     {
+<a name="l00067"></a>00067         m_type = <a class="code" href="../../d9/dd5/_protocol_defines_8h.html#a00c16b31347152c2c2b0d2b290fe6738">PKG_TYPE_NONE</a>;
+<a name="l00068"></a>00068         m_cmd = 0;
+<a name="l00069"></a>00069         m_srcUuid = QString(<span class="stringliteral">&quot;&quot;</span>);
+<a name="l00070"></a>00070         m_dstUuid = QString(<span class="stringliteral">&quot;&quot;</span>);
+<a name="l00071"></a>00071     }
+<a name="l00072"></a>00072 
+<a name="l00073"></a>00073     <span class="keywordtype">void</span> <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#ab16b398d30befc8712d95dca47f73a4d">setSrc</a>(QUuid&amp; Src);
+<a name="l00074"></a>00074     <span class="keywordtype">void</span> <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#ab59c8aef3c0db5c13432a2233ee34c60">setDst</a>(QUuid&amp; Dst);
+<a name="l00075"></a>00075     <span class="keywordtype">void</span> <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a24136553da28fd13db3314b7e8a5fabd">setCmd</a>(quint32 Cmd);
+<a name="l00076"></a>00076     <span class="keywordtype">void</span> <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a2c25c84befb6f77ba031a5f914a1c91c">setType</a>(quint8 Type);
+<a name="l00077"></a>00077 
+<a name="l00078"></a>00078     QUuid <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#aa1b13686720b2f2ba37656215752f34e">getSrc</a>(QByteArray&amp; package);
+<a name="l00079"></a>00079     QUuid <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a23afdcbf25eaf512b8acca3460a8f14b">getDst</a>(QByteArray&amp; package);
+<a name="l00080"></a>00080     quint32 <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a26124f84ff35161b6dc1735e2d5ee944">getCmd</a>(QByteArray&amp; package);
+<a name="l00081"></a>00081     quint8 <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a043a88573ef931782474b26bee22e260">getType</a>(QByteArray&amp; package);
+<a name="l00082"></a>00082 
+<a name="l00083"></a>00083     QByteArray&amp; <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a831e1a30d950a74c307e97dee42dee4c">GetPackage</a>();
+<a name="l00084"></a>00084     <span class="keywordtype">bool</span> <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a6200f2b70d57c317c0487f46034964f1">AnalysisPackage</a>(QByteArray&amp; data);
+<a name="l00085"></a>00085     <span class="keywordtype">bool</span> <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a3825cba9ad1f2fa04e15e08d7afd6ddc">DataRecived</a>(QDataStream&amp; stream, quint32 len, QString <span class="keyword">self</span>);
+<a name="l00086"></a>00086 <span class="keyword">private</span>:
+<a name="l00087"></a>00087     quint32 GetCmdValue() {<span class="keywordflow">return</span> 0;}
+<a name="l00088"></a>00088     <span class="keywordtype">void</span> setCmdValue(quint32 newCmd) {<span class="keywordflow">return</span>;}
+<a name="l00089"></a>00089     quint32 GetPackageCount() {<span class="keywordflow">return</span> 0;}
+<a name="l00090"></a>00090     <span class="keywordtype">void</span> setPackageCount(quint32 newPackageCount) {<span class="keywordflow">return</span>;}
+<a name="l00091"></a>00091     quint32 GetPackageDataSize() {<span class="keywordflow">return</span> 0;}
+<a name="l00092"></a>00092     <span class="keywordtype">void</span> setPackageDataSize(quint32 newPackageDataSize) {<span class="keywordflow">return</span>;}
+<a name="l00093"></a>00093     quint8 GetPackageType();
+<a name="l00094"></a>00094     <span class="keywordtype">void</span> SetPackageType(quint8 type);
+<a name="l00095"></a>00095     QString GetSrcUuid();
+<a name="l00096"></a>00096     <span class="keywordtype">void</span> setSrcUuid(QString newSrcUuid) {<span class="keywordflow">return</span>;}
+<a name="l00097"></a>00097     QString GetDstUuid();
+<a name="l00098"></a>00098     <span class="keywordtype">void</span> setDstUuid(QString newDstUuid) {<span class="keywordflow">return</span>;}
+<a name="l00099"></a>00099     <span class="keywordtype">void</span> FillInternalBuffer(QByteArray&amp; data) {<span class="keywordflow">return</span>;}
+<a name="l00100"></a>00100     <span class="keywordtype">void</span> DispatchPackage(QString&amp; <span class="keyword">self</span>, <span class="keywordtype">char</span>* data, quint32&amp; dataSize);
+<a name="l00101"></a>00101     <span class="keywordtype">void</span> MakePackage(QDataStream&amp; stream);
+<a name="l00102"></a>00102     <span class="keywordtype">int</span> ReleasePackage(QDataStream&amp; stream);
+<a name="l00103"></a>00103 <span class="keyword">private</span>:
+<a name="l00104"></a>00104     QUuid m_srcUuid;
+<a name="l00105"></a>00105     QUuid m_dstUuid;
+<a name="l00106"></a>00106     quint8 m_type ;
+<a name="l00107"></a>00107     quint32 m_cmd;
+<a name="l00108"></a>00108 };
+<a name="l00109"></a>00109 
+<a name="l00110"></a><a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a24136553da28fd13db3314b7e8a5fabd">00110</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a24136553da28fd13db3314b7e8a5fabd">PackageProtocol_1_0::setCmd</a>(quint32 Cmd)
+<a name="l00111"></a>00111 {
+<a name="l00112"></a>00112     m_cmd = Cmd;
+<a name="l00113"></a>00113 }
+<a name="l00114"></a>00114 
+<a name="l00115"></a><a class="code" href="../../db/d9b/class_package_protocol__1__0.html#ab59c8aef3c0db5c13432a2233ee34c60">00115</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#ab59c8aef3c0db5c13432a2233ee34c60">PackageProtocol_1_0::setDst</a>(QUuid&amp; Dst)
+<a name="l00116"></a>00116 {
+<a name="l00117"></a>00117     m_dstUuid = Dst;
+<a name="l00118"></a>00118 }
+<a name="l00119"></a>00119 
+<a name="l00120"></a><a class="code" href="../../db/d9b/class_package_protocol__1__0.html#ab16b398d30befc8712d95dca47f73a4d">00120</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#ab16b398d30befc8712d95dca47f73a4d">PackageProtocol_1_0::setSrc</a>(QUuid&amp; Src)
+<a name="l00121"></a>00121 {
+<a name="l00122"></a>00122     m_srcUuid = Src;
+<a name="l00123"></a>00123 }
+<a name="l00124"></a>00124 
+<a name="l00125"></a><a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a2c25c84befb6f77ba031a5f914a1c91c">00125</a> <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="../../db/d9b/class_package_protocol__1__0.html#a2c25c84befb6f77ba031a5f914a1c91c">PackageProtocol_1_0::setType</a>(quint8 type)
+<a name="l00126"></a>00126 {
+<a name="l00127"></a>00127     m_type = type;
+<a name="l00128"></a>00128 }
+<a name="l00129"></a>00129 
+<a name="l00130"></a>00130 
+<a name="l00131"></a>00131 
+<a name="l00132"></a>00132 <span class="preprocessor">#endif // RPCPROTOCOL_H</span>
+<a name="l00133"></a>00133 <span class="preprocessor"></span>
+<a name="l00134"></a>00134 
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:40 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

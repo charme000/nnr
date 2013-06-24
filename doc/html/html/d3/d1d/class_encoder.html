@@ -1,0 +1,598 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: Encoder类参考</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="../../inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">公有类型</a> &#124;
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-static-attribs">静态公有属性</a>  </div>
+  <div class="headertitle">
+<div class="title">Encoder类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="Encoder" -->
+<p>提供多种加密解密算法  
+ <a href="../../d3/d1d/class_encoder.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../df/d4b/_encoder_8h_source.html">Encoder.h</a>&gt;</code></p>
+
+<p><a href="../../d6/d6b/class_encoder-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-types"></a>
+公有类型</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../d3/d1d/class_encoder.html#a10508c39d42f4921352bb68e934900ddadac8472774f4391ec1d16b052ccb033a">ECB</a> =  0, 
+<a class="el" href="../../d3/d1d/class_encoder.html#a10508c39d42f4921352bb68e934900ddaa8609a270a0ef8b0e66cb1d4d075a875">CBC</a> =  1, 
+<a class="el" href="../../d3/d1d/class_encoder.html#a10508c39d42f4921352bb68e934900dda0d71a912b3259fb2bb23f16f50b166f1">CFB</a> =  2
+ }</td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#ab5d9324930644abeb150da7a7747ffe3">Encoder</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#a87cc8067c98c0ab2134dee3822e3b250">~Encoder</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#a0855e586e76a7660eb2cdb90d684928a">MakeKey</a> (char const *key, char const *chain, int keylength=DEFAULT_BLOCK_SIZE, int blockSize=DEFAULT_BLOCK_SIZE)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#a37fee3f3d59fe9151511a0cd8f3e76a0">crc16_final</a> (unsigned short *uCrc16)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#a6f7edc193626f793f309821661fb663a">crc16_update</a> (unsigned short *uCrc16, unsigned char *pBuffer, unsigned long uBufSize)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#afa51698f8ac756bafc5cb2a4dfbf4c8d">crc16_init</a> (unsigned short *uCrc16)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#a452f3f41a148a4d059f0f2e0a516094a">EncryptBlock</a> (char const *in, char *result)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#a270b3a3f0d7a70b5be9df441a0462d83">DecryptBlock</a> (char const *in, char *result)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#abcc6da65eaa4c96f3b22c1d17dd0964c">Encrypt</a> (char const *in, char *result, size_t n, int iMode=<a class="el" href="../../d3/d1d/class_encoder.html#a10508c39d42f4921352bb68e934900ddadac8472774f4391ec1d16b052ccb033a">ECB</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#a25171748c8c9ea9413efc377630cb675">Decrypt</a> (char const *in, char *result, size_t n, int iMode=<a class="el" href="../../d3/d1d/class_encoder.html#a10508c39d42f4921352bb68e934900ddadac8472774f4391ec1d16b052ccb033a">ECB</a>)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#a299eb5758cb4b96768b268acd6f6b353">GetKeyLength</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#a327a0cd9eaa451ab32c21620d34a6fdb">GetBlockSize</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#ac96d8b7c1ee0405d09ea3bc5f569d05b">GetRounds</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#a50975854fa3ba1ba670b007c02a5ec76">ResetChain</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pub-static-attribs"></a>
+静态公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">static char const *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d1d/class_encoder.html#adf6d11528bbf67e3b07303ed00a065fb">sm_chain0</a> = &quot;\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0&quot;</td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>提供多种加密解密算法 </p>
+<dl class="version"><dt><b>版本:</b></dt><dd>1.0 </dd></dl>
+<dl class="date"><dt><b>日期:</b></dt><dd>2012.12.1-2012.1.30 </dd></dl>
+
+<p>在文件<a class="el" href="../../df/d4b/_encoder_8h_source.html">Encoder.h</a>第<a class="el" href="../../df/d4b/_encoder_8h_source.html#l00008">8</a>行定义。</p>
+</div><hr/><h2>成员枚举类型文档</h2>
+<a class="anchor" id="a10508c39d42f4921352bb68e934900dd"></a><!-- doxytag: member="Encoder::@0" ref="a10508c39d42f4921352bb68e934900dd" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">anonymous enum</td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<dl><dt><b>枚举值: </b></dt><dd><table border="0" cellspacing="2" cellpadding="0">
+<tr><td valign="top"><em><a class="anchor" id="a10508c39d42f4921352bb68e934900ddadac8472774f4391ec1d16b052ccb033a"></a><!-- doxytag: member="ECB" ref="a10508c39d42f4921352bb68e934900ddadac8472774f4391ec1d16b052ccb033a" args="" -->ECB</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a10508c39d42f4921352bb68e934900ddaa8609a270a0ef8b0e66cb1d4d075a875"></a><!-- doxytag: member="CBC" ref="a10508c39d42f4921352bb68e934900ddaa8609a270a0ef8b0e66cb1d4d075a875" args="" -->CBC</em>&nbsp;</td><td>
+</td></tr>
+<tr><td valign="top"><em><a class="anchor" id="a10508c39d42f4921352bb68e934900dda0d71a912b3259fb2bb23f16f50b166f1"></a><!-- doxytag: member="CFB" ref="a10508c39d42f4921352bb68e934900dda0d71a912b3259fb2bb23f16f50b166f1" args="" -->CFB</em>&nbsp;</td><td>
+</td></tr>
+</table>
+</dd>
+</dl>
+
+<p>在文件<a class="el" href="../../df/d4b/_encoder_8h_source.html">Encoder.h</a>第<a class="el" href="../../df/d4b/_encoder_8h_source.html#l00011">11</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="ab5d9324930644abeb150da7a7747ffe3"></a><!-- doxytag: member="Encoder::Encoder" ref="ab5d9324930644abeb150da7a7747ffe3" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d1d/class_encoder.html#ab5d9324930644abeb150da7a7747ffe3">Encoder::Encoder</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d08/_encoder_8cpp_source.html">Encoder.cpp</a>第<a class="el" href="../../d8/d08/_encoder_8cpp_source.html#l00965">965</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a87cc8067c98c0ab2134dee3822e3b250"></a><!-- doxytag: member="Encoder::~Encoder" ref="a87cc8067c98c0ab2134dee3822e3b250" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d1d/class_encoder.html#a87cc8067c98c0ab2134dee3822e3b250">Encoder::~Encoder</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d08/_encoder_8cpp_source.html">Encoder.cpp</a>第<a class="el" href="../../d8/d08/_encoder_8cpp_source.html#l00970">970</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a37fee3f3d59fe9151511a0cd8f3e76a0"></a><!-- doxytag: member="Encoder::crc16_final" ref="a37fee3f3d59fe9151511a0cd8f3e76a0" args="(unsigned short *uCrc16)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d1d/class_encoder.html#a37fee3f3d59fe9151511a0cd8f3e76a0">Encoder::crc16_final</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>uCrc16</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d08/_encoder_8cpp_source.html">Encoder.cpp</a>第<a class="el" href="../../d8/d08/_encoder_8cpp_source.html#l01473">1473</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="afa51698f8ac756bafc5cb2a4dfbf4c8d"></a><!-- doxytag: member="Encoder::crc16_init" ref="afa51698f8ac756bafc5cb2a4dfbf4c8d" args="(unsigned short *uCrc16)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d1d/class_encoder.html#afa51698f8ac756bafc5cb2a4dfbf4c8d">Encoder::crc16_init</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>uCrc16</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d08/_encoder_8cpp_source.html">Encoder.cpp</a>第<a class="el" href="../../d8/d08/_encoder_8cpp_source.html#l01458">1458</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a6f7edc193626f793f309821661fb663a"></a><!-- doxytag: member="Encoder::crc16_update" ref="a6f7edc193626f793f309821661fb663a" args="(unsigned short *uCrc16, unsigned char *pBuffer, unsigned long uBufSize)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d1d/class_encoder.html#a6f7edc193626f793f309821661fb663a">Encoder::crc16_update</a> </td>
+          <td>(</td>
+          <td class="paramtype">unsigned short *&#160;</td>
+          <td class="paramname"><em>uCrc16</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned char *&#160;</td>
+          <td class="paramname"><em>pBuffer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>uBufSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d08/_encoder_8cpp_source.html">Encoder.cpp</a>第<a class="el" href="../../d8/d08/_encoder_8cpp_source.html#l01463">1463</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a25171748c8c9ea9413efc377630cb675"></a><!-- doxytag: member="Encoder::Decrypt" ref="a25171748c8c9ea9413efc377630cb675" args="(char const *in, char *result, size_t n, int iMode=ECB)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d1d/class_encoder.html#a25171748c8c9ea9413efc377630cb675">Encoder::Decrypt</a> </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iMode</em> = <code><a class="el" href="../../d3/d1d/class_encoder.html#a10508c39d42f4921352bb68e934900ddadac8472774f4391ec1d16b052ccb033a">ECB</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d08/_encoder_8cpp_source.html">Encoder.cpp</a>第<a class="el" href="../../d8/d08/_encoder_8cpp_source.html#l01408">1408</a>行定义。</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d1d/class_encoder_a25171748c8c9ea9413efc377630cb675_cgraph.png" border="0" usemap="#d3/d1d/class_encoder_a25171748c8c9ea9413efc377630cb675_cgraph" alt=""/></div>
+<map name="d3/d1d/class_encoder_a25171748c8c9ea9413efc377630cb675_cgraph" id="d3/d1d/class_encoder_a25171748c8c9ea9413efc377630cb675_cgraph">
+<area shape="rect" id="node3" href="../../d3/d1d/class_encoder.html#a270b3a3f0d7a70b5be9df441a0462d83" title="Encoder::DecryptBlock" alt="" coords="177,5,333,32"/><area shape="rect" id="node5" href="../../d3/d1d/class_encoder.html#a452f3f41a148a4d059f0f2e0a516094a" title="Encoder::EncryptBlock" alt="" coords="177,56,333,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a270b3a3f0d7a70b5be9df441a0462d83"></a><!-- doxytag: member="Encoder::DecryptBlock" ref="a270b3a3f0d7a70b5be9df441a0462d83" args="(char const *in, char *result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d1d/class_encoder.html#a270b3a3f0d7a70b5be9df441a0462d83">Encoder::DecryptBlock</a> </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d08/_encoder_8cpp_source.html">Encoder.cpp</a>第<a class="el" href="../../d8/d08/_encoder_8cpp_source.html#l01306">1306</a>行定义。</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d1d/class_encoder_a270b3a3f0d7a70b5be9df441a0462d83_icgraph.png" border="0" usemap="#d3/d1d/class_encoder_a270b3a3f0d7a70b5be9df441a0462d83_icgraph" alt=""/></div>
+<map name="d3/d1d/class_encoder_a270b3a3f0d7a70b5be9df441a0462d83_icgraph" id="d3/d1d/class_encoder_a270b3a3f0d7a70b5be9df441a0462d83_icgraph">
+<area shape="rect" id="node3" href="../../d3/d1d/class_encoder.html#a25171748c8c9ea9413efc377630cb675" title="Encoder::Decrypt" alt="" coords="211,5,333,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abcc6da65eaa4c96f3b22c1d17dd0964c"></a><!-- doxytag: member="Encoder::Encrypt" ref="abcc6da65eaa4c96f3b22c1d17dd0964c" args="(char const *in, char *result, size_t n, int iMode=ECB)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d1d/class_encoder.html#abcc6da65eaa4c96f3b22c1d17dd0964c">Encoder::Encrypt</a> </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>result</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iMode</em> = <code><a class="el" href="../../d3/d1d/class_encoder.html#a10508c39d42f4921352bb68e934900ddadac8472774f4391ec1d16b052ccb033a">ECB</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d08/_encoder_8cpp_source.html">Encoder.cpp</a>第<a class="el" href="../../d8/d08/_encoder_8cpp_source.html#l01359">1359</a>行定义。</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d1d/class_encoder_abcc6da65eaa4c96f3b22c1d17dd0964c_cgraph.png" border="0" usemap="#d3/d1d/class_encoder_abcc6da65eaa4c96f3b22c1d17dd0964c_cgraph" alt=""/></div>
+<map name="d3/d1d/class_encoder_abcc6da65eaa4c96f3b22c1d17dd0964c_cgraph" id="d3/d1d/class_encoder_abcc6da65eaa4c96f3b22c1d17dd0964c_cgraph">
+<area shape="rect" id="node3" href="../../d3/d1d/class_encoder.html#a452f3f41a148a4d059f0f2e0a516094a" title="Encoder::EncryptBlock" alt="" coords="177,5,333,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a452f3f41a148a4d059f0f2e0a516094a"></a><!-- doxytag: member="Encoder::EncryptBlock" ref="a452f3f41a148a4d059f0f2e0a516094a" args="(char const *in, char *result)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d1d/class_encoder.html#a452f3f41a148a4d059f0f2e0a516094a">Encoder::EncryptBlock</a> </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>result</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d08/_encoder_8cpp_source.html">Encoder.cpp</a>第<a class="el" href="../../d8/d08/_encoder_8cpp_source.html#l01252">1252</a>行定义。</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d3/d1d/class_encoder_a452f3f41a148a4d059f0f2e0a516094a_icgraph.png" border="0" usemap="#d3/d1d/class_encoder_a452f3f41a148a4d059f0f2e0a516094a_icgraph" alt=""/></div>
+<map name="d3/d1d/class_encoder_a452f3f41a148a4d059f0f2e0a516094a_icgraph" id="d3/d1d/class_encoder_a452f3f41a148a4d059f0f2e0a516094a_icgraph">
+<area shape="rect" id="node3" href="../../d3/d1d/class_encoder.html#abcc6da65eaa4c96f3b22c1d17dd0964c" title="Encoder::Encrypt" alt="" coords="211,5,333,32"/><area shape="rect" id="node5" href="../../d3/d1d/class_encoder.html#a25171748c8c9ea9413efc377630cb675" title="Encoder::Decrypt" alt="" coords="211,56,333,83"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a327a0cd9eaa451ab32c21620d34a6fdb"></a><!-- doxytag: member="Encoder::GetBlockSize" ref="a327a0cd9eaa451ab32c21620d34a6fdb" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d3/d1d/class_encoder.html#a327a0cd9eaa451ab32c21620d34a6fdb">Encoder::GetBlockSize</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d4b/_encoder_8h_source.html">Encoder.h</a>第<a class="el" href="../../df/d4b/_encoder_8h_source.html#l00085">85</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a299eb5758cb4b96768b268acd6f6b353"></a><!-- doxytag: member="Encoder::GetKeyLength" ref="a299eb5758cb4b96768b268acd6f6b353" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d3/d1d/class_encoder.html#a299eb5758cb4b96768b268acd6f6b353">Encoder::GetKeyLength</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d4b/_encoder_8h_source.html">Encoder.h</a>第<a class="el" href="../../df/d4b/_encoder_8h_source.html#l00075">75</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="ac96d8b7c1ee0405d09ea3bc5f569d05b"></a><!-- doxytag: member="Encoder::GetRounds" ref="ac96d8b7c1ee0405d09ea3bc5f569d05b" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d3/d1d/class_encoder.html#ac96d8b7c1ee0405d09ea3bc5f569d05b">Encoder::GetRounds</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d4b/_encoder_8h_source.html">Encoder.h</a>第<a class="el" href="../../df/d4b/_encoder_8h_source.html#l00095">95</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a0855e586e76a7660eb2cdb90d684928a"></a><!-- doxytag: member="Encoder::MakeKey" ref="a0855e586e76a7660eb2cdb90d684928a" args="(char const *key, char const *chain, int keylength=DEFAULT_BLOCK_SIZE, int blockSize=DEFAULT_BLOCK_SIZE)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d1d/class_encoder.html#a0855e586e76a7660eb2cdb90d684928a">Encoder::MakeKey</a> </td>
+          <td>(</td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char const *&#160;</td>
+          <td class="paramname"><em>chain</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>keylength</em> = <code>DEFAULT_BLOCK_SIZE</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>blockSize</em> = <code>DEFAULT_BLOCK_SIZE</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d8/d08/_encoder_8cpp_source.html">Encoder.cpp</a>第<a class="el" href="../../d8/d08/_encoder_8cpp_source.html#l00974">974</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a50975854fa3ba1ba670b007c02a5ec76"></a><!-- doxytag: member="Encoder::ResetChain" ref="a50975854fa3ba1ba670b007c02a5ec76" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d3/d1d/class_encoder.html#a50975854fa3ba1ba670b007c02a5ec76">Encoder::ResetChain</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d4b/_encoder_8h_source.html">Encoder.h</a>第<a class="el" href="../../df/d4b/_encoder_8h_source.html#l00105">105</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="adf6d11528bbf67e3b07303ed00a065fb"></a><!-- doxytag: member="Encoder::sm_chain0" ref="adf6d11528bbf67e3b07303ed00a065fb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char const * <a class="el" href="../../d3/d1d/class_encoder.html#adf6d11528bbf67e3b07303ed00a065fb">Encoder::sm_chain0</a> = &quot;\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0&quot;<code> [static]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../df/d4b/_encoder_8h_source.html">Encoder.h</a>第<a class="el" href="../../df/d4b/_encoder_8h_source.html#l00113">113</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../df/d4b/_encoder_8h_source.html">Encoder.h</a></li>
+<li><a class="el" href="../../d8/d08/_encoder_8cpp_source.html">Encoder.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:41 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

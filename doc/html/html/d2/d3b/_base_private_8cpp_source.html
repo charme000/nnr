@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: BasePrivate.cpp源文件</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">BasePrivate.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d2/d3b/_base_private_8cpp.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 ﻿#include <span class="stringliteral">&quot;Base_p.h&quot;</span>
+<a name="l00002"></a>00002 
+<a name="l00009"></a>00009 QT_BEGIN_NAMESPACE
+<a name="l00010"></a>00010 
+<a name="l00011"></a><a class="code" href="../../d4/deb/class_base_private.html#a8b5e9ada3cf4215de10d2786ca15f9de">00011</a> <a class="code" href="../../d4/deb/class_base_private.html#a8b5e9ada3cf4215de10d2786ca15f9de">BasePrivate::BasePrivate</a>(<a class="code" href="../../db/dfc/class_base.html" title="提供异步多客户端通信的管理及使用等调用接口">Base</a>* b, QObject* p): q_ptr(b)
+<a name="l00012"></a>00012 {
+<a name="l00013"></a>00013     m_parent = p;
+<a name="l00014"></a>00014 }
+<a name="l00015"></a>00015 
+<a name="l00016"></a><a class="code" href="../../d4/deb/class_base_private.html#ae8f9561fdf15a45b20c4d3d43031c70e">00016</a> <span class="keywordtype">void</span> <a class="code" href="../../d4/deb/class_base_private.html#ae8f9561fdf15a45b20c4d3d43031c70e">BasePrivate::Start_p</a>()
+<a name="l00017"></a>00017 {
+<a name="l00018"></a>00018     <span class="keywordflow">if</span>(m_manager != NULL)
+<a name="l00019"></a>00019     {
+<a name="l00020"></a>00020         m_manager-&gt;<a class="code" href="../../d8/d3d/class_manager.html#a942a5bd0c477aceca63a1d56db44900b">Start</a>();
+<a name="l00021"></a>00021     }
+<a name="l00022"></a>00022 }
+<a name="l00023"></a>00023 
+<a name="l00024"></a><a class="code" href="../../d4/deb/class_base_private.html#a687c90de3c04259532bc53aebad27c9a">00024</a> <span class="keywordtype">bool</span> <a class="code" href="../../d4/deb/class_base_private.html#a687c90de3c04259532bc53aebad27c9a">BasePrivate::Stop_p</a>(QString&amp; uuid, <span class="keywordtype">bool</span> immediate)
+<a name="l00025"></a>00025 {
+<a name="l00026"></a>00026     <span class="keywordtype">bool</span> ret = <span class="keyword">false</span>;
+<a name="l00027"></a>00027 
+<a name="l00028"></a>00028     <span class="keywordflow">if</span>(m_bus != NULL)
+<a name="l00029"></a>00029     {
+<a name="l00030"></a>00030         ret = m_bus-&gt;<a class="code" href="../../d3/d1b/class_bus.html#a41741335e09142bc692c058e9e9272f8">Delete</a>(uuid,m_flag,immediate);
+<a name="l00031"></a>00031     }
+<a name="l00032"></a>00032 
+<a name="l00033"></a>00033     <span class="keywordflow">return</span> ret;
+<a name="l00034"></a>00034 }
+<a name="l00035"></a>00035 
+<a name="l00036"></a><a class="code" href="../../d4/deb/class_base_private.html#a121521dc7f8aec35b99fdb5319232b16">00036</a> <span class="keywordtype">void</span> <a class="code" href="../../d4/deb/class_base_private.html#a121521dc7f8aec35b99fdb5319232b16">BasePrivate::StopAll</a>(<span class="keywordtype">bool</span> immediate)
+<a name="l00037"></a>00037 {
+<a name="l00038"></a>00038     <span class="keywordflow">if</span>(m_bus != NULL)
+<a name="l00039"></a>00039     {
+<a name="l00040"></a>00040         m_bus-&gt;<a class="code" href="../../d3/d1b/class_bus.html#af4448983d0f929151d55c3bd99f11e6e">DeleteAll</a>(m_flag,immediate);
+<a name="l00041"></a>00041     }
+<a name="l00042"></a>00042 }
+<a name="l00043"></a>00043 
+<a name="l00044"></a><a class="code" href="../../d4/deb/class_base_private.html#acd8caf4e34fcfaff2ebed5976a4e0af1">00044</a> <span class="keywordtype">void</span> <a class="code" href="../../d4/deb/class_base_private.html#acd8caf4e34fcfaff2ebed5976a4e0af1">BasePrivate::Set_p</a>(<a class="code" href="../../d4/deb/class_base_private.html#a235fc92944568cb582533fdbd5d66fdc">SlotFunc</a> ConnectServerSuccess, <a class="code" href="../../d4/deb/class_base_private.html#a235fc92944568cb582533fdbd5d66fdc">SlotFunc</a> AcceptNewClient, <a class="code" href="../../d4/deb/class_base_private.html#a235fc92944568cb582533fdbd5d66fdc">SlotFunc</a> ConnectError, <a class="code" href="../../d4/deb/class_base_private.html#a235fc92944568cb582533fdbd5d66fdc">SlotFunc</a> ServerDisconnected, <a class="code" href="../../d4/deb/class_base_private.html#a235fc92944568cb582533fdbd5d66fdc">SlotFunc</a> ClientDisconnected, <a class="code" href="../../d4/deb/class_base_private.html#a235fc92944568cb582533fdbd5d66fdc">SlotFunc</a> AddToBusFailed, <a class="code" href="../../d4/deb/class_base_private.html#a235fc92944568cb582533fdbd5d66fdc">SlotFunc</a> DataArrived, <a class="code" href="../../d4/deb/class_base_private.html#a235fc92944568cb582533fdbd5d66fdc">SlotFunc</a> ByteWriten)
+<a name="l00045"></a>00045 {
+<a name="l00046"></a>00046     <span class="keywordflow">if</span>(m_bus)
+<a name="l00047"></a>00047     {
+<a name="l00048"></a>00048         <span class="keywordflow">if</span>(DataArrived)
+<a name="l00049"></a>00049         {
+<a name="l00050"></a>00050             connect(m_bus, SIGNAL(dataArrived(QByteArray&amp;,QByteArray&amp;)), m_parent, DataArrived);
+<a name="l00051"></a>00051         }
+<a name="l00052"></a>00052     }
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054     <span class="keywordflow">if</span>(m_manager)
+<a name="l00055"></a>00055     {
+<a name="l00056"></a>00056         <span class="keywordflow">if</span>(ConnectServerSuccess)
+<a name="l00057"></a>00057         {
+<a name="l00058"></a>00058             connect(m_manager, SIGNAL(connectToServer(QString)), m_parent, ConnectServerSuccess);
+<a name="l00059"></a>00059         }
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061         <span class="keywordflow">if</span>(AddToBusFailed)
+<a name="l00062"></a>00062         {
+<a name="l00063"></a>00063             connect(m_manager, SIGNAL(addToBusFailed(QString)), m_parent, AddToBusFailed);
+<a name="l00064"></a>00064         }
+<a name="l00065"></a>00065 
+<a name="l00066"></a>00066         <span class="keywordflow">if</span>(AcceptNewClient)
+<a name="l00067"></a>00067         {
+<a name="l00068"></a>00068             connect(m_manager, SIGNAL(newClientConnectd(QString)), m_parent, AcceptNewClient);
+<a name="l00069"></a>00069         }
+<a name="l00070"></a>00070 
+<a name="l00071"></a>00071         <span class="keywordflow">if</span>(ConnectError)
+<a name="l00072"></a>00072         {
+<a name="l00073"></a>00073             connect(m_manager, SIGNAL(connectError(QAbstractSocket::SocketError)), m_parent, ConnectError);
+<a name="l00074"></a>00074         }
+<a name="l00075"></a>00075 
+<a name="l00076"></a>00076         <span class="keywordflow">if</span>(ServerDisconnected)
+<a name="l00077"></a>00077         {
+<a name="l00078"></a>00078             connect(m_manager, SIGNAL(serverDisconnected(QString)), m_parent, ServerDisconnected);
+<a name="l00079"></a>00079         }
+<a name="l00080"></a>00080 
+<a name="l00081"></a>00081         <span class="keywordflow">if</span>(ClientDisconnected)
+<a name="l00082"></a>00082         {
+<a name="l00083"></a>00083             connect(m_manager, SIGNAL(clientDisconnected(QString)), m_parent, ClientDisconnected);
+<a name="l00084"></a>00084         }
+<a name="l00085"></a>00085 
+<a name="l00086"></a>00086         <span class="keywordflow">if</span>(ByteWriten)
+<a name="l00087"></a>00087         {
+<a name="l00088"></a>00088             connect(m_manager, SIGNAL(byteWriten(qint64)), m_parent, ByteWriten);
+<a name="l00089"></a>00089         }
+<a name="l00090"></a>00090     }
+<a name="l00091"></a>00091 }
+<a name="l00092"></a>00092 
+<a name="l00093"></a><a class="code" href="../../d4/deb/class_base_private.html#a7e0b6429955c4540e005b66f96bb0884">00093</a> <span class="keywordtype">void</span> <a class="code" href="../../d4/deb/class_base_private.html#a7e0b6429955c4540e005b66f96bb0884">BasePrivate::CreateManager_p</a>(<a class="code" href="../../d3/d1b/class_bus.html" title="实现数据通讯总线">Bus</a>&amp; bus)
+<a name="l00094"></a>00094 {
+<a name="l00095"></a>00095     m_bus = &amp;bus;
+<a name="l00096"></a>00096     m_bus-&gt;<a class="code" href="../../d3/d1b/class_bus.html#ad1d23c6e8ed47fba5fe059b6a486143b">setHostUuid</a>(m_guidname);
+<a name="l00097"></a>00097     m_manager = <a class="code" href="../../dc/d91/class_manager_factory.html#a74059db849d00deed127134360475c0a">ManagerFactory::Create</a>(bus, m_attribute, m_flag, m_value, m_guidname);
+<a name="l00098"></a>00098 }
+<a name="l00099"></a>00099 
+<a name="l00100"></a>00100 QT_END_NAMESPACE
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:40 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: ProviderFactory.h源文件</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">ProviderFactory.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/d3f/_provider_factory_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 ﻿#ifndef PROVIDERFACTORY_H
+<a name="l00002"></a>00002 <span class="preprocessor">#define PROVIDERFACTORY_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="preprocessor">#include &quot;<a class="code" href="../../db/d1f/_common_8h.html">common/Common.h</a>&quot;</span>
+<a name="l00005"></a>00005 <span class="preprocessor">#include &quot;<a class="code" href="../../d6/d82/_i_provider_8h.html">IProvider.h</a>&quot;</span>
+<a name="l00006"></a>00006 <span class="preprocessor">#include &quot;<a class="code" href="../../d9/db3/_tcp_provider_8h.html">TcpProvider.h</a>&quot;</span>
+<a name="l00007"></a>00007 <span class="preprocessor">#include &quot;<a class="code" href="../../d5/d3d/_pipe_provider_8h.html">PipeProvider.h</a>&quot;</span>
+<a name="l00008"></a>00008 <span class="preprocessor">#include &quot;<a class="code" href="../../d1/dd7/_user_unit_8h.html">UserUnit.h</a>&quot;</span>
+<a name="l00009"></a>00009 <span class="preprocessor">#include &quot;<a class="code" href="../../d7/d5b/_bus_8h.html">Bus.h</a>&quot;</span>
+<a name="l00010"></a>00010 
+<a name="l00011"></a>00011 QT_BEGIN_NAMESPACE
+<a name="l00012"></a>00012 <span class="keyword">class </span><a class="code" href="../../d8/deb/class_i_provider.html" title="抽象传输接口">IProvider</a>;
+<a name="l00013"></a>00013 <span class="keyword">class </span><a class="code" href="../../d3/d1b/class_bus.html" title="实现数据通讯总线">Bus</a>;
+<a name="l00014"></a>00014 QT_END_NAMESPACE
+<a name="l00015"></a>00015 
+<a name="l00022"></a><a class="code" href="../../d2/dce/class_provider_factory.html">00022</a> <span class="keyword">class </span><a class="code" href="../../d2/dce/class_provider_factory.html" title="传输体工厂类">ProviderFactory</a> : <span class="keyword">public</span> QObject
+<a name="l00023"></a>00023 {
+<a name="l00024"></a>00024         Q_OBJECT
+<a name="l00025"></a>00025     <span class="keyword">public</span>:
+<a name="l00026"></a><a class="code" href="../../d2/dce/class_provider_factory.html#a1f04c3841e5460d42d21e45bbacef9e1">00026</a>         <span class="keyword">static</span> <a class="code" href="../../d8/deb/class_i_provider.html" title="抽象传输接口">IProvider</a>* <a class="code" href="../../d2/dce/class_provider_factory.html#a1f04c3841e5460d42d21e45bbacef9e1">Create</a>(<a class="code" href="../../d3/d1b/class_bus.html" title="实现数据通讯总线">Bus</a>* b, <span class="keywordtype">void</span>* v, <a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392">Flag_Tag</a> ft)
+<a name="l00027"></a>00027         {
+<a name="l00028"></a>00028             QPointer&lt;IProvider&gt; provider = NULL;
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030             <span class="keywordflow">switch</span> (ft)
+<a name="l00031"></a>00031             {
+<a name="l00032"></a>00032                 <span class="keywordflow">case</span> <a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392a21dcfa795db289aab3585e791f7b531b">TcpFlag</a>:
+<a name="l00033"></a>00033                     provider = <span class="keyword">new</span> <a class="code" href="../../da/d08/class_tcp_provider.html" title="利用网络套接字来实现传输和接受数据的接口">TcpProvider</a>((QTcpSocket*)v);
+<a name="l00034"></a>00034                     provider-&gt;m_bus = b;
+<a name="l00035"></a>00035                     <span class="keywordflow">break</span>;
+<a name="l00036"></a>00036                 <span class="keywordflow">case</span> <a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392a64978dc498a1c15e9da099792031308c">PipeFlag</a>:
+<a name="l00037"></a>00037                     provider = <span class="keyword">new</span> <a class="code" href="../../d2/d76/class_pipe_provider.html" title="利用本地套接字(windows下使用管道)来实现传输和接受数据的接口">PipeProvider</a>((QLocalSocket*)v);
+<a name="l00038"></a>00038                     provider-&gt;m_bus = b;
+<a name="l00039"></a>00039                     <span class="keywordflow">break</span>;
+<a name="l00040"></a>00040                 <span class="keywordflow">default</span>:
+<a name="l00041"></a>00041                     <span class="keywordflow">break</span>;
+<a name="l00042"></a>00042             }
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044             <span class="keywordflow">return</span> provider;
+<a name="l00045"></a>00045         }
+<a name="l00046"></a>00046 };
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048 <span class="preprocessor">#endif // PROVIDERFACTORY_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:40 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

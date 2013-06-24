@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="nnr">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="nnr_private">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{dfb560cf-98c7-4c0c-beab-fa748e7f3665}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{ac8857e5-89d7-4a21-b7e7-37dfb1816cc0}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="nnr\ProtocolFactory.h">
+      <Filter>nnr</Filter>
+    </ClInclude>
+    <ClInclude Include="nnr\ProtocolDefines.h">
+      <Filter>nnr</Filter>
+    </ClInclude>
+    <ClInclude Include="nnr\ManagerFactory.h">
+      <Filter>nnr</Filter>
+    </ClInclude>
+    <ClInclude Include="nnr\Macro.h">
+      <Filter>nnr</Filter>
+    </ClInclude>
+    <ClInclude Include="nnr\Encoder.h">
+      <Filter>nnr</Filter>
+    </ClInclude>
+    <ClInclude Include="nnr\Defines.h">
+      <Filter>nnr</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="nnr\UserUnit.cpp">
+      <Filter>nnr</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr\TcpProvider.cpp">
+      <Filter>nnr</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr\TcpManager.cpp">
+      <Filter>nnr</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr\ProtocolFactory.cpp">
+      <Filter>nnr</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr\PipeProvider.cpp">
+      <Filter>nnr</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr\PipeManager.cpp">
+      <Filter>nnr</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr\PackageProtocol_1_0.cpp">
+      <Filter>nnr</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr\Manager.cpp">
+      <Filter>nnr</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr\Encoder.cpp">
+      <Filter>nnr</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr\Bus.cpp">
+      <Filter>nnr</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr\Base.cpp">
+      <Filter>nnr</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_UserUnit.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_UserUnit.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TcpProvider.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TcpProvider.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TcpManager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TcpManager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ProviderFactory.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ProviderFactory.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PipeProvider.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PipeProvider.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PipeManager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PipeManager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PackageProtocol_1_0.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PackageProtocol_1_0.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Manager.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Manager.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_IProvider.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_IProvider.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_IProtocol.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_IProtocol.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Bus.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Bus.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Base.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Base.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Base_p.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Base_p.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr_private\BasePrivate.cpp">
+      <Filter>nnr_private</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Bus_p.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Bus_p.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr_private\BusPrivate.cpp">
+      <Filter>nnr_private</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_UserUnit_p.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_UserUnit_p.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="nnr_private\UserUnitPrivate.cpp">
+      <Filter>nnr_private</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="nnr\UserUnit.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr\TcpProvider.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr\TcpManager.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr\ProviderFactory.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr\PipeProvider.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr\PipeManager.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr\PackageProtocol_1_0.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr\Manager.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr\IProvider.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr\IProtocol.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr\Bus.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr\Base.h">
+      <Filter>nnr</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr_private\Base_p.h">
+      <Filter>nnr_private</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr_private\Bus_p.h">
+      <Filter>nnr_private</Filter>
+    </CustomBuild>
+    <CustomBuild Include="nnr_private\UserUnit_p.h">
+      <Filter>nnr_private</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

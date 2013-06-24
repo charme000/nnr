@@ -1,0 +1,17 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$de/da5/class_pipe_manager.html#a99a0cf4815f3df8d750eac8d96d47bfb" title="PipeManager::ConnectError" alt="" coords="258,43,441,69"/>
+<area shape="rect" id="node7" href="$de/da5/class_pipe_manager.html#aebb6108812c816691a5db67549b34a2d" title="PipeManager::UserLeave" alt="" coords="266,119,433,145"/>
+<area shape="rect" id="node19" href="$de/da5/class_pipe_manager.html#a608ffda2bd552e167527906f8af29676" title="PipeManager::ByteWriten" alt="" coords="264,195,435,221"/>
+<area shape="rect" id="node23" href="$d8/d3d/class_manager.html#ae19a85f7c261a55279fd65019daf7dca" title="Manager::AddUserToBus" alt="" coords="266,245,433,272"/>
+<area shape="rect" id="node27" href="$d8/d3d/class_manager.html#a434ed4720130a41539f52d1935852523" title="Manager::newClientConnectd" alt="" coords="254,296,445,323"/>
+<area shape="rect" id="node29" href="$d8/d3d/class_manager.html#abbba106bb652d4d762d25f2aec259613" title="Manager::connectToServer" alt="" coords="261,347,437,373"/>
+<area shape="rect" id="node31" href="$d8/d3d/class_manager.html#addc2328d9550f4e31686f8416e870e35" title="Manager::addToBusFailed" alt="" coords="263,397,436,424"/>
+<area shape="rect" id="node5" href="$d8/d3d/class_manager.html#af802bd0ffca83dc094882bc18bd25cc9" title="Manager::connectError" alt="" coords="513,5,668,32"/>
+<area shape="rect" id="node9" href="$d8/d3d/class_manager.html#abbf01da0571bc291414df195e156183e" title="Manager::DelUserFromBus" alt="" coords="501,56,680,83"/>
+<area shape="rect" id="node15" href="$d8/d3d/class_manager.html#a0c8600b382a62d4d64de9f511008a11e" title="Manager::clientDisconnected" alt="" coords="495,107,686,133"/>
+<area shape="rect" id="node17" href="$d8/d3d/class_manager.html#a0a01248007c42351f1683ec62d4e525f" title="Manager::serverDisconnected" alt="" coords="494,157,687,184"/>
+<area shape="rect" id="node11" href="$d3/d1b/class_bus.html#abca1d169269aef5452d883dbde4dfa2e" title="Bus::GetGuid" alt="" coords="736,31,837,57"/>
+<area shape="rect" id="node13" href="$d3/d1b/class_bus.html#a41741335e09142bc692c058e9e9272f8" title="Bus::Delete" alt="" coords="741,81,832,108"/>
+<area shape="rect" id="node21" href="$d8/d3d/class_manager.html#accc441991746f76ba4bc00dd993407fa" title="Manager::byteWriten" alt="" coords="519,208,662,235"/>
+<area shape="rect" id="node25" href="$d3/d1b/class_bus.html#a16445102f6f61a21eaa7e35bcfe881f9" title="Bus::Add" alt="" coords="553,259,629,285"/>
+</map>

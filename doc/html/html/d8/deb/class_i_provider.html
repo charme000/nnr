@@ -1,0 +1,388 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: IProvider类参考</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="../../inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">公有槽</a> &#124;
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-attribs">公有属性</a>  </div>
+  <div class="headertitle">
+<div class="title">IProvider类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="IProvider" -->
+<p>抽象传输接口  
+ <a href="../../d8/deb/class_i_provider.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>&gt;</code></p>
+<div class="dynheader">
+类IProvider继承关系图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d7d/class_i_provider__inherit__graph.png" border="0" usemap="#_i_provider_inherit__map" alt="Inheritance graph"/></div>
+<map name="_i_provider_inherit__map" id="_i_provider_inherit__map">
+<area shape="rect" id="node3" href="../../d2/d76/class_pipe_provider.html" title="利用本地套接字(windows下使用管道)来实现传输和接受数据的接口" alt="" coords="5,80,99,107"/><area shape="rect" id="node5" href="../../da/d08/class_tcp_provider.html" title="利用网络套接字来实现传输和接受数据的接口" alt="" coords="123,80,212,107"/></map>
+<center><span class="legend">[<a href="../../graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+IProvider合作图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../de/d81/class_i_provider__coll__graph.png" border="0" usemap="#_i_provider_coll__map" alt="Collaboration graph"/></div>
+<map name="_i_provider_coll__map" id="_i_provider_coll__map">
+<area shape="rect" id="node2" href="../../d3/d1b/class_bus.html" title="实现数据通讯总线" alt="" coords="5,5,51,32"/><area shape="rect" id="node4" href="../../db/dfd/class_i_protocol.html" title="抽象协议接口" alt="" coords="75,5,148,32"/></map>
+<center><span class="legend">[<a href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d5/dfe/class_i_provider-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-slots"></a>
+公有槽</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/deb/class_i_provider.html#a4983f9f02755027ffc31b12bc6282718">DataArrive</a> ()</td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/deb/class_i_provider.html#acc9f1395a860cabc5d232ea67213f696">IProvider</a> ()</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/deb/class_i_provider.html#a1b9d1381f501d5af81d85727a315c767">Send</a> (QByteArray &amp;b)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/deb/class_i_provider.html#a2fd251c6bfc64dd265e83635eb60c35d">Send</a> (QString &amp;b)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/deb/class_i_provider.html#a07ed4e6a6361a15896f67816ecedc56f">setupReciveManager</a> (<a class="el" href="../../db/dfd/class_i_protocol.html">IProtocol</a> *protocol)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/deb/class_i_provider.html#a2453ba08ca4e222b26cbc67aad3c785b">unsetupReciveManager</a> (<a class="el" href="../../db/dfd/class_i_protocol.html">IProtocol</a> *protocol)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/deb/class_i_provider.html#a59cbd41852a5d9ee867e6b2d90dfe2bb">createProtocol</a> (quint8 version)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/deb/class_i_provider.html#abf1ee6896ab1af1b6ebd0567df530330">m_data</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d1b/class_bus.html">Bus</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">m_bus</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/dfd/class_i_protocol.html">IProtocol</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/deb/class_i_provider.html#a9b369c97859b92a5af90f18def021f10">m_protocol</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>抽象传输接口 </p>
+<dl class="version"><dt><b>版本:</b></dt><dd>1.0 </dd></dl>
+<dl class="date"><dt><b>日期:</b></dt><dd>2012.12.1-2012.1.30 </dd></dl>
+
+<p>在文件<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>第<a class="el" href="../../d6/d82/_i_provider_8h_source.html#l00028">28</a>行定义。</p>
+</div><hr/><h2>构造及析构函数文档</h2>
+<a class="anchor" id="acc9f1395a860cabc5d232ea67213f696"></a><!-- doxytag: member="IProvider::IProvider" ref="acc9f1395a860cabc5d232ea67213f696" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/deb/class_i_provider.html#acc9f1395a860cabc5d232ea67213f696">IProvider::IProvider</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>第<a class="el" href="../../d6/d82/_i_provider_8h_source.html#l00032">32</a>行定义。</p>
+
+</div>
+</div>
+<hr/><h2>成员函数文档</h2>
+<a class="anchor" id="a59cbd41852a5d9ee867e6b2d90dfe2bb"></a><!-- doxytag: member="IProvider::createProtocol" ref="a59cbd41852a5d9ee867e6b2d90dfe2bb" args="(quint8 version)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d8/deb/class_i_provider.html#a59cbd41852a5d9ee867e6b2d90dfe2bb">IProvider::createProtocol</a> </td>
+          <td>(</td>
+          <td class="paramtype">quint8&#160;</td>
+          <td class="paramname"><em>version</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>第<a class="el" href="../../d6/d82/_i_provider_8h_source.html#l00054">54</a>行定义。</p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/deb/class_i_provider_a59cbd41852a5d9ee867e6b2d90dfe2bb_cgraph.png" border="0" usemap="#d8/deb/class_i_provider_a59cbd41852a5d9ee867e6b2d90dfe2bb_cgraph" alt=""/></div>
+<map name="d8/deb/class_i_provider_a59cbd41852a5d9ee867e6b2d90dfe2bb_cgraph" id="d8/deb/class_i_provider_a59cbd41852a5d9ee867e6b2d90dfe2bb_cgraph">
+<area shape="rect" id="node3" href="../../dd/d11/class_protocol_factory.html#a4eb508f17eff0bb2ad308ee9b99f788c" title="ProtocolFactory::Create" alt="" coords="216,5,376,32"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/deb/class_i_provider_a59cbd41852a5d9ee867e6b2d90dfe2bb_icgraph.png" border="0" usemap="#d8/deb/class_i_provider_a59cbd41852a5d9ee867e6b2d90dfe2bb_icgraph" alt=""/></div>
+<map name="d8/deb/class_i_provider_a59cbd41852a5d9ee867e6b2d90dfe2bb_icgraph" id="d8/deb/class_i_provider_a59cbd41852a5d9ee867e6b2d90dfe2bb_icgraph">
+<area shape="rect" id="node3" href="../../d2/d76/class_pipe_provider.html#ae42c094da3271bb9e0d556cc61ccb13b" title="PipeProvider::DataArrive" alt="" coords="217,56,378,83"/><area shape="rect" id="node9" href="../../da/d08/class_tcp_provider.html#ab9ba25a3a137145fa8a5d4c4e7c2877a" title="TcpProvider::DataArrive" alt="" coords="219,107,375,133"/><area shape="rect" id="node5" href="../../d2/d76/class_pipe_provider.html#a1c20d6cbf72b163eb20b90ff971b5e74" title="PipeProvider::PipeProvider" alt="" coords="431,5,606,32"/><area shape="rect" id="node7" href="../../d2/d76/class_pipe_provider.html#ad1392f8edc19ef4b6fffd27c27cc6f14" title="PipeProvider::~PipeProvider" alt="" coords="427,56,610,83"/><area shape="rect" id="node11" href="../../da/d08/class_tcp_provider.html#af566fe443f866f34d4a8770da3357a73" title="TcpProvider::TcpProvider" alt="" coords="437,107,601,133"/><area shape="rect" id="node13" href="../../da/d08/class_tcp_provider.html#aa56574b1382e3f561b9bfafa53a7ab1b" title="TcpProvider::~TcpProvider" alt="" coords="433,157,605,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4983f9f02755027ffc31b12bc6282718"></a><!-- doxytag: member="IProvider::DataArrive" ref="a4983f9f02755027ffc31b12bc6282718" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d8/deb/class_i_provider.html#a4983f9f02755027ffc31b12bc6282718">IProvider::DataArrive</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [inline, slot]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>被<a class="el" href="../../d2/d76/class_pipe_provider.html#ae42c094da3271bb9e0d556cc61ccb13b">PipeProvider</a>及<a class="el" href="../../da/d08/class_tcp_provider.html#ab9ba25a3a137145fa8a5d4c4e7c2877a">TcpProvider</a>重载。</p>
+
+<p>在文件<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>第<a class="el" href="../../d6/d82/_i_provider_8h_source.html#l00075">75</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a1b9d1381f501d5af81d85727a315c767"></a><!-- doxytag: member="IProvider::Send" ref="a1b9d1381f501d5af81d85727a315c767" args="(QByteArray &amp;b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../d8/deb/class_i_provider.html#a1b9d1381f501d5af81d85727a315c767">IProvider::Send</a> </td>
+          <td>(</td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>被<a class="el" href="../../d2/d76/class_pipe_provider.html#ada09812f0acb59c396beb4a9b3f077c8">PipeProvider</a>及<a class="el" href="../../da/d08/class_tcp_provider.html#a64dd37ce6ae2adc05e397d40f0977674">TcpProvider</a>重载。</p>
+
+<p>在文件<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>第<a class="el" href="../../d6/d82/_i_provider_8h_source.html#l00038">38</a>行定义。</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/deb/class_i_provider_a1b9d1381f501d5af81d85727a315c767_icgraph.png" border="0" usemap="#d8/deb/class_i_provider_a1b9d1381f501d5af81d85727a315c767_icgraph" alt=""/></div>
+<map name="d8/deb/class_i_provider_a1b9d1381f501d5af81d85727a315c767_icgraph" id="d8/deb/class_i_provider_a1b9d1381f501d5af81d85727a315c767_icgraph">
+<area shape="rect" id="node3" href="../../da/d09/class_user_unit_private.html#ab5bdeb0faf318a65f9d91886cd9c98e1" title="UserUnitPrivate::SendPackage_p" alt="" coords="163,5,378,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2fd251c6bfc64dd265e83635eb60c35d"></a><!-- doxytag: member="IProvider::Send" ref="a2fd251c6bfc64dd265e83635eb60c35d" args="(QString &amp;b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../d8/deb/class_i_provider.html#a1b9d1381f501d5af81d85727a315c767">IProvider::Send</a> </td>
+          <td>(</td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>b</em></td><td>)</td>
+          <td><code> [inline, virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>第<a class="el" href="../../d6/d82/_i_provider_8h_source.html#l00039">39</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a07ed4e6a6361a15896f67816ecedc56f"></a><!-- doxytag: member="IProvider::setupReciveManager" ref="a07ed4e6a6361a15896f67816ecedc56f" args="(IProtocol *protocol)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d8/deb/class_i_provider.html#a07ed4e6a6361a15896f67816ecedc56f">IProvider::setupReciveManager</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/dfd/class_i_protocol.html">IProtocol</a> *&#160;</td>
+          <td class="paramname"><em>protocol</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>第<a class="el" href="../../d6/d82/_i_provider_8h_source.html#l00041">41</a>行定义。</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/deb/class_i_provider_a07ed4e6a6361a15896f67816ecedc56f_icgraph.png" border="0" usemap="#d8/deb/class_i_provider_a07ed4e6a6361a15896f67816ecedc56f_icgraph" alt=""/></div>
+<map name="d8/deb/class_i_provider_a07ed4e6a6361a15896f67816ecedc56f_icgraph" id="d8/deb/class_i_provider_a07ed4e6a6361a15896f67816ecedc56f_icgraph">
+<area shape="rect" id="node3" href="../../d2/d76/class_pipe_provider.html#ae42c094da3271bb9e0d556cc61ccb13b" title="PipeProvider::DataArrive" alt="" coords="254,56,415,83"/><area shape="rect" id="node9" href="../../da/d08/class_tcp_provider.html#ab9ba25a3a137145fa8a5d4c4e7c2877a" title="TcpProvider::DataArrive" alt="" coords="257,107,413,133"/><area shape="rect" id="node5" href="../../d2/d76/class_pipe_provider.html#a1c20d6cbf72b163eb20b90ff971b5e74" title="PipeProvider::PipeProvider" alt="" coords="469,5,643,32"/><area shape="rect" id="node7" href="../../d2/d76/class_pipe_provider.html#ad1392f8edc19ef4b6fffd27c27cc6f14" title="PipeProvider::~PipeProvider" alt="" coords="465,56,647,83"/><area shape="rect" id="node11" href="../../da/d08/class_tcp_provider.html#af566fe443f866f34d4a8770da3357a73" title="TcpProvider::TcpProvider" alt="" coords="474,107,638,133"/><area shape="rect" id="node13" href="../../da/d08/class_tcp_provider.html#aa56574b1382e3f561b9bfafa53a7ab1b" title="TcpProvider::~TcpProvider" alt="" coords="470,157,642,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2453ba08ca4e222b26cbc67aad3c785b"></a><!-- doxytag: member="IProvider::unsetupReciveManager" ref="a2453ba08ca4e222b26cbc67aad3c785b" args="(IProtocol *protocol)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d8/deb/class_i_provider.html#a2453ba08ca4e222b26cbc67aad3c785b">IProvider::unsetupReciveManager</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/dfd/class_i_protocol.html">IProtocol</a> *&#160;</td>
+          <td class="paramname"><em>protocol</em></td><td>)</td>
+          <td><code> [inline]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>第<a class="el" href="../../d6/d82/_i_provider_8h_source.html#l00048">48</a>行定义。</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/deb/class_i_provider_a2453ba08ca4e222b26cbc67aad3c785b_icgraph.png" border="0" usemap="#d8/deb/class_i_provider_a2453ba08ca4e222b26cbc67aad3c785b_icgraph" alt=""/></div>
+<map name="d8/deb/class_i_provider_a2453ba08ca4e222b26cbc67aad3c785b_icgraph" id="d8/deb/class_i_provider_a2453ba08ca4e222b26cbc67aad3c785b_icgraph">
+<area shape="rect" id="node3" href="../../da/d09/class_user_unit_private.html#a32a634edc23dec01f4cc1a07b2ac904a" title="UserUnitPrivate::~UserUnitPrivate" alt="" coords="267,5,483,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a9beeaf05b39b779a948c7a7fa10bb23f"></a><!-- doxytag: member="IProvider::m_bus" ref="a9beeaf05b39b779a948c7a7fa10bb23f" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d1b/class_bus.html">Bus</a>* <a class="el" href="../../d8/deb/class_i_provider.html#a9beeaf05b39b779a948c7a7fa10bb23f">IProvider::m_bus</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>第<a class="el" href="../../d6/d82/_i_provider_8h_source.html#l00071">71</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="abf1ee6896ab1af1b6ebd0567df530330"></a><!-- doxytag: member="IProvider::m_data" ref="abf1ee6896ab1af1b6ebd0567df530330" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray <a class="el" href="../../d8/deb/class_i_provider.html#abf1ee6896ab1af1b6ebd0567df530330">IProvider::m_data</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>第<a class="el" href="../../d6/d82/_i_provider_8h_source.html#l00070">70</a>行定义。</p>
+
+</div>
+</div>
+<a class="anchor" id="a9b369c97859b92a5af90f18def021f10"></a><!-- doxytag: member="IProvider::m_protocol" ref="a9b369c97859b92a5af90f18def021f10" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/dfd/class_i_protocol.html">IProtocol</a>* <a class="el" href="../../d8/deb/class_i_provider.html#a9b369c97859b92a5af90f18def021f10">IProvider::m_protocol</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a>第<a class="el" href="../../d6/d82/_i_provider_8h_source.html#l00072">72</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d6/d82/_i_provider_8h_source.html">IProvider.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:41 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

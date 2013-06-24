@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$d8/d3d/class_manager.html" title="实现通讯中管理监听和接受等操作的接口" alt="" coords="47,96,119,123"/>
+<area shape="rect" id="node4" href="$da/dda/class_user_unit.html" title="参与连接以及通讯的实体定义类" alt="" coords="5,5,77,32"/>
+<area shape="rect" id="node6" href="$d3/d1b/class_bus.html" title="实现数据通讯总线" alt="" coords="101,5,147,32"/>
+</map>

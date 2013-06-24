@@ -1,0 +1,4 @@
+<map id="G" name="G">
+<area shape="rect" id="node3" href="$de/da5/class_pipe_manager.html" title="利用本地套接字(windows平台下为管道)实现通讯的管理器接口" alt="" coords="5,80,104,107"/>
+<area shape="rect" id="node5" href="$d3/d2b/class_tcp_manager.html" title="利用网络套接字实现通讯的管理器接口" alt="" coords="128,80,221,107"/>
+</map>

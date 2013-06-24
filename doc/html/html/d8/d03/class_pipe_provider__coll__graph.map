@@ -1,0 +1,5 @@
+<map id="G" name="G">
+<area shape="rect" id="node2" href="$d8/deb/class_i_provider.html" title="抽象传输接口" alt="" coords="34,96,104,123"/>
+<area shape="rect" id="node4" href="$d3/d1b/class_bus.html" title="实现数据通讯总线" alt="" coords="5,5,51,32"/>
+<area shape="rect" id="node6" href="$db/dfd/class_i_protocol.html" title="抽象协议接口" alt="" coords="75,5,148,32"/>
+</map>

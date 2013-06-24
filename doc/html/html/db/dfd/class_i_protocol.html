@@ -1,0 +1,603 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: IProtocol类参考</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li class="current"><a href="../../annotated.html"><span>类</span></a></li>
+      <li><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../annotated.html"><span>组合类型列表</span></a></li>
+      <li><a href="../../classes.html"><span>组合类型索引</span></a></li>
+      <li><a href="../../inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="../../functions.html"><span>组合类型成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="summary">
+<a href="#signals">信号</a> &#124;
+<a href="#pub-methods">公有成员</a> &#124;
+<a href="#pub-attribs">公有属性</a>  </div>
+  <div class="headertitle">
+<div class="title">IProtocol类参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<!-- doxytag: class="IProtocol" -->
+<p>抽象协议接口  
+ <a href="../../db/dfd/class_i_protocol.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d7/d2b/_i_protocol_8h_source.html">IProtocol.h</a>&gt;</code></p>
+<div class="dynheader">
+类IProtocol继承关系图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d8/de3/class_i_protocol__inherit__graph.png" border="0" usemap="#_i_protocol_inherit__map" alt="Inheritance graph"/></div>
+<map name="_i_protocol_inherit__map" id="_i_protocol_inherit__map">
+<area shape="rect" id="node3" href="../../db/d9b/class_package_protocol__1__0.html" title="内置通讯协议" alt="" coords="5,80,155,107"/></map>
+<center><span class="legend">[<a href="../../graph_legend.html">图例</a>]</span></center></div>
+
+<p><a href="../../d4/df2/class_i_protocol-members.html">所有成员的列表。</a></p>
+<table class="memberdecls">
+<tr><td colspan="2"><h2><a name="signals"></a>
+信号</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a3db0ff6293f3b48afb6f7dbc859cf255">recivedDataForMe</a> (QByteArray &amp;package, QByteArray &amp;data)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a9a29073c582c4109d181c5df581d9c57">recivedDataForOther</a> (QString &amp;dst, QByteArray &amp;package, QByteArray &amp;data)</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a99c0d95744b3ad3c33d7ccec2f2b78f8">recivedDataForAll</a> (QString &amp;src, QByteArray &amp;package, QByteArray &amp;data)</td></tr>
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+公有成员</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#ac205b3aa13d8bb52742be21c4dce405d">GetCmdValue</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a3c3c08794db8e4af93e789644e6728d9">setCmdValue</a> (quint32 newCmd)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a97b1e18b92e49c68d9f333366d1c8c5d">GetPackageCount</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a701ca9d78b0ace44ddc7b24a5dd6b872">setPackageCount</a> (quint32 newPackageCount)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual quint32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a1f254471c6fae3a7724800dd3b776f36">GetPackageDataSize</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#ad133990277ce65c1cca9bb7b213b4597">setPackageDataSize</a> (quint32 newPackageDataSize)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual quint8&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a38fdd9b0abdacac39dc5a620eb4d82c8">GetPackageType</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#ade3ddc161a04044b2db114788d18f98b">SetPackageType</a> (quint8 type)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a99fe8fe97499f5f48aa348d91a9e158d">GetSrcUuid</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#ab3c0409259e981a939ebf134b6a71377">setSrcUuid</a> (QString newSrcUuid)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a864a71b2ef704aedc48a69be74385051">GetDstUuid</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a03b47e7ec2e61326ec3110e6a6e03893">setDstUuid</a> (QString newDstUuid)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual QByteArray &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#ac3e36747e9ed2bb2cfa8e04eef53a2d8">GetPackage</a> ()=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#ad0bcae33f530d03e0b1dda3dceb41a30">AnalysisPackage</a> (QByteArray &amp;data)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a11a734765146714d8d3534bc514ff921">FillInternalBuffer</a> (QByteArray &amp;data)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a450ccc7353dc88cd7b184bbce48cf562">DispatchPackage</a> (QString &amp;self, char *data, quint32 &amp;dataSize)=0</td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a144c9d8b4dfb11f73d363da315578295">DataRecived</a> (QDataStream &amp;stream, quint32 len, QString self)=0</td></tr>
+<tr><td colspan="2"><h2><a name="pub-attribs"></a>
+公有属性</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dfd/class_i_protocol.html#a354ef31b55993b55ec5bc866a4471f04">m_Package</a></td></tr>
+</table>
+<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<div class="textblock"><p>抽象协议接口 </p>
+<dl class="version"><dt><b>版本:</b></dt><dd>1.0 </dd></dl>
+<dl class="date"><dt><b>日期:</b></dt><dd>2012.12.1-2012.1.30 </dd></dl>
+
+<p>在文件<a class="el" href="../../d7/d2b/_i_protocol_8h_source.html">IProtocol.h</a>第<a class="el" href="../../d7/d2b/_i_protocol_8h_source.html#l00016">16</a>行定义。</p>
+</div><hr/><h2>成员函数文档</h2>
+<a class="anchor" id="ad0bcae33f530d03e0b1dda3dceb41a30"></a><!-- doxytag: member="IProtocol::AnalysisPackage" ref="ad0bcae33f530d03e0b1dda3dceb41a30" args="(QByteArray &amp;data)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="../../db/dfd/class_i_protocol.html#ad0bcae33f530d03e0b1dda3dceb41a30">IProtocol::AnalysisPackage</a> </td>
+          <td>(</td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="../../db/d9b/class_package_protocol__1__0.html#a6200f2b70d57c317c0487f46034964f1">PackageProtocol_1_0</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="a144c9d8b4dfb11f73d363da315578295"></a><!-- doxytag: member="IProtocol::DataRecived" ref="a144c9d8b4dfb11f73d363da315578295" args="(QDataStream &amp;stream, quint32 len, QString self)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual bool <a class="el" href="../../db/dfd/class_i_protocol.html#a144c9d8b4dfb11f73d363da315578295">IProtocol::DataRecived</a> </td>
+          <td>(</td>
+          <td class="paramtype">QDataStream &amp;&#160;</td>
+          <td class="paramname"><em>stream</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>self</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="../../db/d9b/class_package_protocol__1__0.html#a3825cba9ad1f2fa04e15e08d7afd6ddc">PackageProtocol_1_0</a>内被实现。</p>
+
+<p><div class="dynheader">
+这是这个函数的调用图：</div>
+<div class="dyncontent">
+<div class="center"><img src="../../db/dfd/class_i_protocol_a144c9d8b4dfb11f73d363da315578295_icgraph.png" border="0" usemap="#db/dfd/class_i_protocol_a144c9d8b4dfb11f73d363da315578295_icgraph" alt=""/></div>
+<map name="db/dfd/class_i_protocol_a144c9d8b4dfb11f73d363da315578295_icgraph" id="db/dfd/class_i_protocol_a144c9d8b4dfb11f73d363da315578295_icgraph">
+<area shape="rect" id="node3" href="../../d2/d76/class_pipe_provider.html#ae42c094da3271bb9e0d556cc61ccb13b" title="PipeProvider::DataArrive" alt="" coords="209,56,370,83"/><area shape="rect" id="node9" href="../../da/d08/class_tcp_provider.html#ab9ba25a3a137145fa8a5d4c4e7c2877a" title="TcpProvider::DataArrive" alt="" coords="211,107,367,133"/><area shape="rect" id="node5" href="../../d2/d76/class_pipe_provider.html#a1c20d6cbf72b163eb20b90ff971b5e74" title="PipeProvider::PipeProvider" alt="" coords="423,5,598,32"/><area shape="rect" id="node7" href="../../d2/d76/class_pipe_provider.html#ad1392f8edc19ef4b6fffd27c27cc6f14" title="PipeProvider::~PipeProvider" alt="" coords="419,56,602,83"/><area shape="rect" id="node11" href="../../da/d08/class_tcp_provider.html#af566fe443f866f34d4a8770da3357a73" title="TcpProvider::TcpProvider" alt="" coords="429,107,593,133"/><area shape="rect" id="node13" href="../../da/d08/class_tcp_provider.html#aa56574b1382e3f561b9bfafa53a7ab1b" title="TcpProvider::~TcpProvider" alt="" coords="425,157,597,184"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a450ccc7353dc88cd7b184bbce48cf562"></a><!-- doxytag: member="IProtocol::DispatchPackage" ref="a450ccc7353dc88cd7b184bbce48cf562" args="(QString &amp;self, char *data, quint32 &amp;dataSize)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../db/dfd/class_i_protocol.html#a450ccc7353dc88cd7b184bbce48cf562">IProtocol::DispatchPackage</a> </td>
+          <td>(</td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>self</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">quint32 &amp;&#160;</td>
+          <td class="paramname"><em>dataSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a11a734765146714d8d3534bc514ff921"></a><!-- doxytag: member="IProtocol::FillInternalBuffer" ref="a11a734765146714d8d3534bc514ff921" args="(QByteArray &amp;data)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../db/dfd/class_i_protocol.html#a11a734765146714d8d3534bc514ff921">IProtocol::FillInternalBuffer</a> </td>
+          <td>(</td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac205b3aa13d8bb52742be21c4dce405d"></a><!-- doxytag: member="IProtocol::GetCmdValue" ref="ac205b3aa13d8bb52742be21c4dce405d" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual quint32 <a class="el" href="../../db/dfd/class_i_protocol.html#ac205b3aa13d8bb52742be21c4dce405d">IProtocol::GetCmdValue</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a864a71b2ef704aedc48a69be74385051"></a><!-- doxytag: member="IProtocol::GetDstUuid" ref="a864a71b2ef704aedc48a69be74385051" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QString <a class="el" href="../../db/dfd/class_i_protocol.html#a864a71b2ef704aedc48a69be74385051">IProtocol::GetDstUuid</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac3e36747e9ed2bb2cfa8e04eef53a2d8"></a><!-- doxytag: member="IProtocol::GetPackage" ref="ac3e36747e9ed2bb2cfa8e04eef53a2d8" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QByteArray&amp; <a class="el" href="../../db/dfd/class_i_protocol.html#ac3e36747e9ed2bb2cfa8e04eef53a2d8">IProtocol::GetPackage</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在<a class="el" href="../../db/d9b/class_package_protocol__1__0.html#a831e1a30d950a74c307e97dee42dee4c">PackageProtocol_1_0</a>内被实现。</p>
+
+</div>
+</div>
+<a class="anchor" id="a97b1e18b92e49c68d9f333366d1c8c5d"></a><!-- doxytag: member="IProtocol::GetPackageCount" ref="a97b1e18b92e49c68d9f333366d1c8c5d" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual quint32 <a class="el" href="../../db/dfd/class_i_protocol.html#a97b1e18b92e49c68d9f333366d1c8c5d">IProtocol::GetPackageCount</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a1f254471c6fae3a7724800dd3b776f36"></a><!-- doxytag: member="IProtocol::GetPackageDataSize" ref="a1f254471c6fae3a7724800dd3b776f36" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual quint32 <a class="el" href="../../db/dfd/class_i_protocol.html#a1f254471c6fae3a7724800dd3b776f36">IProtocol::GetPackageDataSize</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a38fdd9b0abdacac39dc5a620eb4d82c8"></a><!-- doxytag: member="IProtocol::GetPackageType" ref="a38fdd9b0abdacac39dc5a620eb4d82c8" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual quint8 <a class="el" href="../../db/dfd/class_i_protocol.html#a38fdd9b0abdacac39dc5a620eb4d82c8">IProtocol::GetPackageType</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a99fe8fe97499f5f48aa348d91a9e158d"></a><!-- doxytag: member="IProtocol::GetSrcUuid" ref="a99fe8fe97499f5f48aa348d91a9e158d" args="()=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual QString <a class="el" href="../../db/dfd/class_i_protocol.html#a99fe8fe97499f5f48aa348d91a9e158d">IProtocol::GetSrcUuid</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a99c0d95744b3ad3c33d7ccec2f2b78f8"></a><!-- doxytag: member="IProtocol::recivedDataForAll" ref="a99c0d95744b3ad3c33d7ccec2f2b78f8" args="(QString &amp;src, QByteArray &amp;package, QByteArray &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../db/dfd/class_i_protocol.html#a99c0d95744b3ad3c33d7ccec2f2b78f8">IProtocol::recivedDataForAll</a> </td>
+          <td>(</td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>package</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [signal]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3db0ff6293f3b48afb6f7dbc859cf255"></a><!-- doxytag: member="IProtocol::recivedDataForMe" ref="a3db0ff6293f3b48afb6f7dbc859cf255" args="(QByteArray &amp;package, QByteArray &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../db/dfd/class_i_protocol.html#a3db0ff6293f3b48afb6f7dbc859cf255">IProtocol::recivedDataForMe</a> </td>
+          <td>(</td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>package</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [signal]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a9a29073c582c4109d181c5df581d9c57"></a><!-- doxytag: member="IProtocol::recivedDataForOther" ref="a9a29073c582c4109d181c5df581d9c57" args="(QString &amp;dst, QByteArray &amp;package, QByteArray &amp;data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../db/dfd/class_i_protocol.html#a9a29073c582c4109d181c5df581d9c57">IProtocol::recivedDataForOther</a> </td>
+          <td>(</td>
+          <td class="paramtype">QString &amp;&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>package</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td><code> [signal]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a3c3c08794db8e4af93e789644e6728d9"></a><!-- doxytag: member="IProtocol::setCmdValue" ref="a3c3c08794db8e4af93e789644e6728d9" args="(quint32 newCmd)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../db/dfd/class_i_protocol.html#a3c3c08794db8e4af93e789644e6728d9">IProtocol::setCmdValue</a> </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>newCmd</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a03b47e7ec2e61326ec3110e6a6e03893"></a><!-- doxytag: member="IProtocol::setDstUuid" ref="a03b47e7ec2e61326ec3110e6a6e03893" args="(QString newDstUuid)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../db/dfd/class_i_protocol.html#a03b47e7ec2e61326ec3110e6a6e03893">IProtocol::setDstUuid</a> </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>newDstUuid</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a701ca9d78b0ace44ddc7b24a5dd6b872"></a><!-- doxytag: member="IProtocol::setPackageCount" ref="a701ca9d78b0ace44ddc7b24a5dd6b872" args="(quint32 newPackageCount)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../db/dfd/class_i_protocol.html#a701ca9d78b0ace44ddc7b24a5dd6b872">IProtocol::setPackageCount</a> </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>newPackageCount</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ad133990277ce65c1cca9bb7b213b4597"></a><!-- doxytag: member="IProtocol::setPackageDataSize" ref="ad133990277ce65c1cca9bb7b213b4597" args="(quint32 newPackageDataSize)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../db/dfd/class_i_protocol.html#ad133990277ce65c1cca9bb7b213b4597">IProtocol::setPackageDataSize</a> </td>
+          <td>(</td>
+          <td class="paramtype">quint32&#160;</td>
+          <td class="paramname"><em>newPackageDataSize</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ade3ddc161a04044b2db114788d18f98b"></a><!-- doxytag: member="IProtocol::SetPackageType" ref="ade3ddc161a04044b2db114788d18f98b" args="(quint8 type)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../db/dfd/class_i_protocol.html#ade3ddc161a04044b2db114788d18f98b">IProtocol::SetPackageType</a> </td>
+          <td>(</td>
+          <td class="paramtype">quint8&#160;</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab3c0409259e981a939ebf134b6a71377"></a><!-- doxytag: member="IProtocol::setSrcUuid" ref="ab3c0409259e981a939ebf134b6a71377" args="(QString newSrcUuid)=0" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void <a class="el" href="../../db/dfd/class_i_protocol.html#ab3c0409259e981a939ebf134b6a71377">IProtocol::setSrcUuid</a> </td>
+          <td>(</td>
+          <td class="paramtype">QString&#160;</td>
+          <td class="paramname"><em>newSrcUuid</em></td><td>)</td>
+          <td><code> [pure virtual]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+</div>
+</div>
+<hr/><h2>成员数据文档</h2>
+<a class="anchor" id="a354ef31b55993b55ec5bc866a4471f04"></a><!-- doxytag: member="IProtocol::m_Package" ref="a354ef31b55993b55ec5bc866a4471f04" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QByteArray <a class="el" href="../../db/dfd/class_i_protocol.html#a354ef31b55993b55ec5bc866a4471f04">IProtocol::m_Package</a></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>在文件<a class="el" href="../../d7/d2b/_i_protocol_8h_source.html">IProtocol.h</a>第<a class="el" href="../../d7/d2b/_i_protocol_8h_source.html#l00040">40</a>行定义。</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成：<ul>
+<li><a class="el" href="../../d7/d2b/_i_protocol_8h_source.html">IProtocol.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:41 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>

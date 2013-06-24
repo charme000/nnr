@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<title>nnr: Defines.h源文件</title>
+
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+
+</head>
+<body>
+<div id="top"><!-- do not remove this div! -->
+
+
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  
+  
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">nnr
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">异步多客户端通讯库</div>
+  </td>
+  
+  
+  
+ </tr>
+ </tbody>
+</table>
+</div>
+
+<!-- 制作者 Doxygen 1.7.6.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "../../search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="../../index.html"><span>首页</span></a></li>
+      <li><a href="../../annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="../../files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="../../search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="../../search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="../../files.html"><span>文件列表</span></a></li>
+      <li><a href="../../globals.html"><span>文件成员</span></a></li>
+    </ul>
+  </div>
+</div>
+<div class="header">
+  <div class="headertitle">
+<div class="title">Defines.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d8/de2/_defines_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="preprocessor">#ifndef DEFINES_H</span>
+<a name="l00002"></a>00002 <span class="preprocessor"></span><span class="preprocessor">#define DEFINES_H</span>
+<a name="l00003"></a>00003 <span class="preprocessor"></span>
+<a name="l00004"></a>00004 <span class="comment">// 监听者类型定义</span>
+<a name="l00005"></a><a class="code" href="../../d8/de2/_defines_8h.html#a6f770eda5da8a279ac61361b90d56146">00005</a> <span class="preprocessor">#define _LISTENER_TCP_ &quot;tcp_listener&quot;</span>
+<a name="l00006"></a><a class="code" href="../../d8/de2/_defines_8h.html#af27876957723d77432418d53e5f0a809">00006</a> <span class="preprocessor"></span><span class="preprocessor">#define _LISTENER_PIPE_ &quot;pipe_listener&quot;</span>
+<a name="l00007"></a>00007 <span class="preprocessor"></span>
+<a name="l00008"></a>00008 
+<a name="l00009"></a><a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392">00009</a> <span class="keyword">enum</span> <a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392">Flag_Tag</a>
+<a name="l00010"></a>00010 {
+<a name="l00011"></a><a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392a8834bad0e4991d09b49a2c5747272404">00011</a>     <a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392a8834bad0e4991d09b49a2c5747272404">InvalidFlag</a> = 0,
+<a name="l00012"></a><a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392a21dcfa795db289aab3585e791f7b531b">00012</a>     <a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392a21dcfa795db289aab3585e791f7b531b">TcpFlag</a>,
+<a name="l00013"></a><a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392a64978dc498a1c15e9da099792031308c">00013</a>     <a class="code" href="../../d8/de2/_defines_8h.html#a413c51d658a95c6df1cc25f21484d392a64978dc498a1c15e9da099792031308c">PipeFlag</a>
+<a name="l00014"></a>00014 };
+<a name="l00015"></a>00015 
+<a name="l00016"></a><a class="code" href="../../d8/de2/_defines_8h.html#a5e74542fb94ae04a81534e1781fbb9c8">00016</a> <span class="preprocessor">#define _EXE_ &quot;exe&quot;</span>
+<a name="l00017"></a><a class="code" href="../../d8/de2/_defines_8h.html#af8567f89dd1e8204ab290c666d819733">00017</a> <span class="preprocessor"></span><span class="preprocessor">#define _DLL_ &quot;dll&quot;</span>
+<a name="l00018"></a><a class="code" href="../../d8/de2/_defines_8h.html#ad1c385ce7561c197cde66ac6cda61ae5">00018</a> <span class="preprocessor"></span><span class="preprocessor">#define _XML_ &quot;xml&quot;</span>
+<a name="l00019"></a><a class="code" href="../../d8/de2/_defines_8h.html#ad9a03b35cff54c4a55ea340eef06535d">00019</a> <span class="preprocessor"></span><span class="preprocessor">#define _XBEL_ &quot;xbel&quot;</span>
+<a name="l00020"></a>00020 <span class="preprocessor"></span>
+<a name="l00021"></a><a class="code" href="../../d8/de2/_defines_8h.html#a70b42a8eefa2ac3ba20fba5e899695c5">00021</a> <span class="preprocessor">#define _CLIENT_ATTRIBUTE_ &quot;client&quot;</span>
+<a name="l00022"></a><a class="code" href="../../d8/de2/_defines_8h.html#a7412db5d493415f73bc842bbb15222e5">00022</a> <span class="preprocessor"></span><span class="preprocessor">#define _SERVER_ATTRIBUTE_ &quot;server&quot;</span>
+<a name="l00023"></a>00023 <span class="preprocessor"></span>
+<a name="l00024"></a>00024 <span class="preprocessor">#endif // DEFINES_H</span>
+</pre></div></div><!-- contents -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+
+
+<hr class="footer"/><address class="footer"><small>
+Generated at 2012年二月1日 星期三 11:21:40 for nnr by &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="../../doxygen.png" alt="doxygen"/>
+</a> 1.7.6.1
+</small></address>
+
+</body>
+</html>
